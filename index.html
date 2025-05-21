@@ -10,133 +10,124 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<b>
-    <nav class="navbar navbar-expand-lg bg-color-purple">
-        <div class="container-lg">
-            <a class="navbar-brand text-light logo" href="#">PIAN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="#">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Tanhapan Belajar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Tantangan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light">Tentang Kami</a>
-                    </li>
+<nav class="navbar navbar-expand-lg sticky-top bg-color-purple">
+    <div class="container-lg ">
+        <a class="navbar-brand text-light logo" href="#">PIAN.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-light" aria-current="page" href="/index.html">Beranda</a>
+                <a class="nav-link text-light" href="#">Tahapan Belajar</a>
+                <a class="nav-link text-light" href="#">Tantangan</a>
+                <a class="nav-link text-light" href="#">Tentang Kami</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-xl mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-8 mb-4 mb-md-0">
+            <h1>Halo! Selamat Datang</h1>
+            <p class="justiy-text">Website ini menyajikan topik utama mengenai HTML dan CSS Dasar.
+                Kamu dapat mempelajari materi tertentu, dan menyelesaikan kuis yang tersedia untuk melatih skill.
+                Selain itu, terdapat tantangan soal yang dapat membantumu mengasah pemahaman dan logika.</p>
+            <button type="button" class="btn btn-color-purple" onclick="window.location.href='/materi.html'">Ayo Mulai!</button>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="https://learnhypersheets.com/image/web-design.svg" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="box-grey mt-5">
+    <div class="container-xl py-5">
+        <h1 class="text-center mb-5">KEUNGGULAN</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 text-center bg-color-purple keunggulan-pop">
+                    <img src="images/card-1.png" class="card-img-top img-fluid card-img" alt="...">
+                    <div class="card-body">
+                        <h5>Belajar Kapan Saja, di Mana Saja</h5>
+                        <p class="card-text">Belajar coding tanpa batas tempat, cukup koneksi internet dan semangat!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center bg-color-purple  keunggulan-pop">
+                    <img src="images/card-2.png" class="card-img-top img-fluid card-img" alt="...">
+                    <div class="card-body">
+                        <h5>Belajar dari Nol, Tanpa Perlu Background IT</h5>
+                        <p class="card-text">Dibuat untuk membantu kamu belajar dari awal, tanpa perlu pengalaman
+                            coding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center bg-color-purple keunggulan-pop">
+                    <img src="images/card-3.png" class="card-img-top img-fluid card-img" alt="...">
+                    <div class="card-body">
+                        <h5>Materi Terstruktur dan Bertahap</h5>
+                        <p class="card-text">Pertama kali belajar ngoding? Tenang, platform ini memang dibuat untuk
+                            kamu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-color-purple py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold">PIAN</h4>
+                <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
+                    frontend.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold">MATERI</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">HTML</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">CSS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold">TENTANG</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">TIM</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">CONTACT</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">KEBIJAKAN</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <div class="container-xl mt-5">
-        <div class="row align-items-center">
-            <div class="col-md-8 mb-4 mb-md-0">
-                <h1>Halo! Selamat Datang</h1>
-                <p class="justiy-text">Website ini menyajikan topik utama mengenai HTML dan CSS Dasar.
-                    Kamu dapat mempelajari materi tertentu, dan menyelesaikan kuis yang tersedia untuk melatih skill.
-                    Selain itu, terdapat tantangan soal yang dapat membantumu mengasah pemahaman dan logika.</p>
-                <button type="button" class="btn btn-color-purple">Ayo Mulai!</button>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="https://learnhypersheets.com/image/web-design.svg" class="img-fluid">
-            </div>
-        </div>
+        <hr class="border-light">
+        <p class="text-center mb-0">
+            © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
+        </p>
     </div>
-
-    <div class="box-grey mt-5">
-        <div class="container-xl py-5">
-            <h1 class="text-center mb-5">KEUNGGULAN</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100 text-center bg-color-purple keunggulan-pop" style="width: 18rem;">
-                        <img src="images/card-1.png" class="card-img-top img-fluid card-img" alt="...">
-                        <div class="card-body">
-                            <h5>Belajar Kapan Saja, di Mana Saja</h5>
-                            <p class="card-text">Belajar coding tanpa batas tempat, cukup koneksi internet dan semangat!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 text-center bg-color-purple  keunggulan-pop" style="width: 18rem;">
-                        <img src="images/card-2.png" class="card-img-top img-fluid card-img" alt="...">
-                        <div class="card-body">
-                            <h5>Belajar dari Nol, Tanpa Perlu Background IT</h5>
-                            <p class="card-text">Dibuat untuk membantu kamu belajar dari awal, tanpa perlu pengalaman
-                                coding.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 text-center bg-color-purple keunggulan-pop" style="width: 18rem;">
-                        <img src="images/card-3.png" class="card-img-top img-fluid card-img" alt="...">
-                        <div class="card-body">
-                            <h5>Materi Terstruktur dan Bertahap</h5>
-                            <p class="card-text">Pertama kali belajar ngoding? Tenang, platform ini memang dibuat untuk
-                                kamu.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="bg-color-purple py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h4 class="fw-bold">PIAN</h4>
-                    <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
-                        frontend.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h4 class="fw-bold">MATERI</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">HTML</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">CSS</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h4 class="fw-bold">TENTANG</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">TIM</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">CONTACT</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">KEBIJAKAN</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="border-light">
-            <p class="text-center mb-0">
-                © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
-            </p>
-        </div>
-    </footer>
-    <!-- ...existing code... -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
-    <script>
-        function revealCards() {
-            const cards = document.querySelectorAll('.keunggulan-pop');
-            const triggerBottom = window.innerHeight * 0.85;
-            cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                if (cardTop < triggerBottom) {
-                    card.classList.add('show');
-                }
-            });
-        }
-        window.addEventListener('scroll', revealCards);
-        window.addEventListener('load', revealCards);
-    </script>
-    </body>
+</footer>
+<!-- ...existing code... -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+<script>
+    function revealCards() {
+        const cards = document.querySelectorAll('.keunggulan-pop');
+        const triggerBottom = window.innerHeight * 0.85;
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            if (cardTop < triggerBottom) {
+                card.classList.add('show');
+            }
+        });
+    }
+    window.addEventListener('scroll', revealCards);
+    window.addEventListener('load', revealCards);
+</script>
+</body>
 
 </html>
