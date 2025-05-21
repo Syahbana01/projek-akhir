@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konten Bertahap</title>
+  <style>
+    .konten { display: none; }
+    .konten.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div id="konten1" class="konten active">Konten 1</div>
+<div id="konten2" class="konten">Konten 2</div>
+<div id="konten3" class="konten">Konten 3</div>
+<div id="konten4" class="konten">Konten 4</div>
+
+<button onclick="sebelumnya()">Sebelumnya</button>
+<button onclick="selanjutnya()" id="next">Selanjutnya</button>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
