@@ -4,14 +4,24 @@
     font-family: Ubuntu;
 }
 
+body{
+    background-color: #212529;
+    color: white;
+}
+
+
 .bg-color-purple, .btn-color-purple{
     background-color: #6E2BF1;
     color: white;
 }
 
-body{
-    background-color: #212529;
+.btn-color-orange{
+    background-color: #ff690c;
     color: white;
+}
+
+.color-orange{
+    color: #ff690c;
 }
 
 .logo{
@@ -27,18 +37,14 @@ body{
     background-color: #4e1eaf;
 }
 
+.btn-color-orange:hover{
+    background-color: #ff690cc8;
+}
+
 .box-grey{
     background-color: #d9d9d928;
 }
 
-.box-grey-materi{
-    background-color: #d9d9d928;
-    padding: 20px;
-}
-
-.search-box input, .search-box button{
-    border-radius: 0%;
-}
 
 .keunggulan-pop {
     opacity: 0;
