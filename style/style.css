@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 *{
     font-family: 'Lexend';
-=======
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-*{
-    font-family: Ubuntu;
->>>>>>> d21a862f56c7fa750366995769fd62c22b33a640
 }
 
 body{
@@ -21,7 +14,6 @@ body{
     color: white;
 }
 
-<<<<<<< HEAD
 .jumbotron .gambar {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transform: rotate(15deg);
@@ -35,33 +27,10 @@ body{
     font-size:small;
 }
 
-=======
-
-.bg-color-purple, .btn-color-purple{
-    background-color: #6E2BF1;
-    color: white;
-}
-
-.btn-color-orange{
-    background-color: #ff690c;
-    color: white;
-}
-
-.color-orange{
-    color: #ff690c;
-}
-
-.logo{
-    font-size: 33px;
-    font-weight: bolder;
-}
-
->>>>>>> d21a862f56c7fa750366995769fd62c22b33a640
 .justify-text{
     text-align: justify;
 }
 
-<<<<<<< HEAD
 .text-center{
     text-align: center;
 }
@@ -100,20 +69,6 @@ body{
 .card h5{
     font-size: medium;
 }
-=======
-.btn-color-purple:hover{
-    background-color: #4e1eaf;
-}
-
-.btn-color-orange:hover{
-    background-color: #ff690cc8;
-}
-
-.box-grey{
-    background-color: #d9d9d928;
-}
-
->>>>>>> d21a862f56c7fa750366995769fd62c22b33a640
 
 .keunggulan-pop {
     opacity: 0;
@@ -126,7 +81,6 @@ body{
     transform: scale(1) translateY(0);
 }
 
-<<<<<<< HEAD
 footer,footer a{
     background-color: #212529;
     color: white;
@@ -154,11 +108,4 @@ footer,footer a{
         padding: 20px;
         text-align: center;
     }
-=======
-.card-img {
-    width: 100%;
-    height: 200px;
-    display: block;
-    object-fit: contain; 
->>>>>>> d21a862f56c7fa750366995769fd62c22b33a640
 }

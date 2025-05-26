@@ -6,146 +6,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style/style.css">
     <title>Materi | Pian</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-color-purple shadow-sm">
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-light">
         <div class="container-lg ">
-            <p class="navbar-brand text-light mb-0 logo" href="#"><i class="fa-solid fa-code"></i> PIAN<span class="color-orange">.</span></p>
+            <a class="navbar-brand fw-bold fs-2" href="#">PIAN}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link text-light" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i> Beranda</a>
-                    <a class="nav-link text-light" href="#"><i class="fa-solid fa-book"></i> Tahapan Belajar</a>
-                    <a class="nav-link text-light" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
-                    <a class="nav-link text-light" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                    <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
+                        Beranda</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-book"></i> Tahapan Belajar</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="d-flex justify-content-center">
-        <div class="box-grey-materi mt-5" style="max-width: 1000px; width: 100%;">
-            <div class="container-xl py-3 text-center">
-                <img src="/images/html.svg" alt="html_logo" width="50px">
-                <span class="fw-bold">HTML (Hyper Text Markup Language)</span>
-                <hr class="border-light">
+    <div class="jumbotron-materi text-center">
+        <h1>Materi Pembelajaran</h1>
+        <p>Kumpulan Materi HTML dan CSS untuk membantu kamu membangun website sederhana pertamamu.</p>
+        <div class=" py-4">
+            <a class="btn-purple" href="/materi.html">Materi HTML</a>
+            <a class="btn-border-purple" href="#materi">Materi CSS</a>
+        </div>
+    </div>
 
-                <div class="d-flex justify-content-center mb-4">
-                    <div class="p-3" style="background-color: #d3d3d3bc; border-radius: 10px;">
-                        <button class="btn btn-color-orange px-4 py-2">Pendahuluan</button>
+    <div class="container py-5">
+        <div class="d-flex align-items-center gap-3">
+            <img src="/images/html.svg" alt="html_logo" width="60" class="mb-2">
+            <h4 class="fw-bold">HTML (Hyper Text Markup Language)</h4>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Pengenalan HTML</h5>
+                            <span class="badge bg-primary">Dasar</span>
+                        </div>
+                        <p class="text-muted">Mengenal apa itu HTML dan bagaimana perannya dalam pembuatan website.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Pengertian HTML</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Sejarah HTML</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Tools untuk menulis HTML</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-color-orange w-100 fw-semibold">Pelajari Materi</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="p-4" style="background-color: #bfbfbf61; border-radius: 10px;">
-                    <h5 class="text-start mb-4">Topik Pembahasan</h5>
-                    <div class="row row-cols-2 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-orange w-100">Tag Heading</button>
-                            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Struktur Dasar HTML</h5>
+                            <span class="badge bg-primary">Dasar</span>
                         </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-orange w-100">List</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-orange w-100">Image</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-orange w-100">Format Text</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-orange w-100">Table</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-orange w-100">Input</button>
-                            </div>
-                        </div>
+                        <p class="text-muted">Mempelajari struktur dasar dokumen HTML dan tag-tag penting.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Doctype dan tag html</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Tag head dan body</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Metadata dan title</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-color-orange w-100 fw-semibold">Pelajari Materi</a>
                     </div>
                 </div>
+            </div>
 
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Heading dan Paragraf</h5>
+                            <span class="badge bg-primary">Dasar</span>
+                        </div>
+                        <p class="text-muted">Belajar cara membuat judul dan paragraf dalam dokumen HTML.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Tag heading h1-h6</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Tag paragraf</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Pemformatan teks</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-color-orange w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Link dan Gambar</h5>
+                            <span class="badge bg-primary">Dasar</span>
+                        </div>
+                        <p class="text-muted">Mempelajari cara menambahkan link dan gambar ke dalam halaman web.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Tag anchor (a)</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Tag image (img)</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Atribut href, src, dan alt</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-color-orange w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">List dan Tabel</h5>
+                            <span class="badge bg-warning text-dark">Menengah</span>
+                        </div>
+                        <p class="text-muted">Belajar membuat daftar dan tabel untuk menampilkan data terstruktur.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Ordered dan unordered list</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Struktur tabel</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Spanning rows and columns</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-color-orange w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Formulir HTML</h5>
+                            <span class="badge bg-warning text-dark">Menengah</span>
+                        </div>
+                        <p class="text-muted">Mempelajari cara membuat formulir interaktif untuk mengumpulkan data.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Tag form dan atributnya</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Input types dan atribut</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Label, button, dan select</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-color-orange w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+        <div class="d-flex align-items-center gap-3">
+            <img src="/images/css.svg" alt="css_logo" width="60" class="mb-2">
+            <h4 class="fw-bold">CSS (Cascading Style Sheets)</h4>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Pengenalan CSS</h5>
+                            <span class="badge bg-primary">Dasar</span>
+                        </div>
+                        <p class="text-muted">Mengenal apa itu CSS dan bagaimana cara kerjanya.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Pengertian CSS</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Cara menambahkan CSS ke HTML</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Sintaks dasar CSS</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Selectors CSS</h5>
+                            <span class="badge bg-primary">Dasar</span>
+                        </div>
+                        <p class="text-muted">Belajar cara memilih elemen HTML yang akan diberi style.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Element selector</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Class dan ID selector</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Kombinasi selector</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Warna dan Background</h5>
+                            <span class="badge bg-primary">Dasar</span>
+                        </div>
+                        <p class="text-muted">Mempelajari cara mengatur warna teks dan background.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Color property</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Background properties</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Nilai warna (HEX, RGB, HSL)</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Font dan Text Styling</h5>
+                            <span class="badge bg-primary">Dasar</span>
+                        </div>
+                        <p class="text-muted">Belajar cara mengatur tampilan teks dan font pada halaman web.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Font family dan font size</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Text alignment dan decoration</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Line height dan letter spacing</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Box Model CSS</h5>
+                            <span class="badge bg-warning text-dark">Menengah</span>
+                        </div>
+                        <p class="text-muted">Memahami konsep box model dalam CSS untuk mengatur layout.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Margin dan padding</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Border dan outline</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Width, height, dan box-sizing</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="fw-bold">Layout dan Positioning</h5>
+                            <span class="badge bg-warning text-dark">Menengah</span>
+                        </div>
+                        <p class="text-muted">Mempelajari cara mengatur posisi elemen dalam halaman web.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Display property</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Position (relative, absolute, fixed)</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Float dan clear</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100 fw-semibold">Pelajari Materi</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="d-flex justify-content-center">
-        <div class="box-grey-materi mt-5 mb-4" style="max-width: 1000px; width: 100%;">
-            <div class="container-xl py-3 text-center">
-                <img src="/images/css.svg" alt="css_logo" width="50px">
-                <span class="fw-bold">CSS (Cascading Style Sheets)</span>
-                <hr class="border-light">
 
-                <div class="d-flex justify-content-center mb-4">
-                    <div class="p-3" style="background-color: #d3d3d3bc; border-radius: 10px;">
-                        <button class="btn btn-color-purple px-4 py-2 ">Pendahuluan</button>
-                        <button class="btn btn-color-purple px-4 py-2">Konsep CSS</button>
-                    </div>
-                </div>
-
-                <div class="p-4" style="background-color: #bfbfbf61; border-radius: 10px;">
-                    <h5 class="text-start mb-4">Topik Pembahasan</h5>
-                    <div class="row row-cols-2 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-purple w-100">Syntax CSS</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-purple w-100">Properti CSS</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-purple w-100">Box Model</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-purple w-100">Format Text</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-purple w-100">Selector CSS</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 bg-light rounded">
-                                <button class="btn btn-color-purple w-100">Penggunaan CSS</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="bg-color-purple py-5">
+    <footer class="py-5 mt-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <h4 class="fw-bold">PIAN</h4>
-                    <p>
-                        Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
-                        frontend.
-                    </p>
+                    <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
+                        frontend.</p>
                 </div>
                 <div class="col-md-4 mb-4">
                     <h4 class="fw-bold">MATERI</h4>
@@ -170,7 +331,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
