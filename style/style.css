@@ -1,42 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 *{
-    font-family: Ubuntu;
+    font-family: 'Lexend';
 }
-.bg-color-purple, .btn-color-purple{
-    background-color: #6E2BF1;
-    color: white;
-}
+
 body{
-    background-color: #212529;
+    background-color: #ffffff;
+}
+
+.jumbotron,.jumbotron-materi{
+    background: linear-gradient(45deg, #6E2BF1, #2f1466);
+    padding: 40px;
     color: white;
 }
-.logo{
-    font-size: 33px;
-    font-weight: bolder;
+
+.jumbotron .gambar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(15deg);
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
 }
+
+.jumbotron p{
+    font-size:small;
+}
+
 .justify-text{
     text-align: justify;
 }
-.btn-color-purple:hover{
-    background-color: #4e1eaf;
+
+.text-center{
+    text-align: center;
 }
-.box-grey{
-    background-color: #d9d9d928;
+
+.btn-purple{
+    text-decoration: none;
+    color: #6E2BF1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px #020006ab;
 }
+
+.btn-border-purple{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px #020006ab;
+}
+
+.why {
+    padding: 80px;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 2px 5px #02000642;
+}
+
+.card p{
+    font-size: small;
+}
+
+.card h5{
+    font-size: medium;
+}
+
 .keunggulan-pop {
     opacity: 0;
     transform: scale(0.8) translateY(40px);
     transition: all 0.6s cubic-bezier(.17,.67,.83,.67);
 }
+
 .keunggulan-pop.show {
     opacity: 1;
     transform: scale(1) translateY(0);
 }
-.card-img {
-    width: 100%;
-    height: 200px;
-    display: block;
-    object-fit: contain;   /* gambar proporsional, tidak gepeng */
-    background: #fff;      /* opsional: latar belakang putih */
-    padding: 10px;         /* opsional: jarak dalam card */
+
+footer,footer a{
+    background-color: #212529;
+    color: white;
+    font-size: small;
+}
+
+.btn-color-orange {
+    background-color: #ff5722;
+    color: white;
+}
+
+.btn-color-orange:hover {
+    background-color: #ff7f50 ;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .jumbotron .gambar {
+        transform: rotate(6deg); 
+        width: 80%;
+        margin: 0 auto 2rem;
+        margin: 20px;
+    }
+    .jumbotron {
+        padding: 20px;
+        text-align: center;
+    }
 }
