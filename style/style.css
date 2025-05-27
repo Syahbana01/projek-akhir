@@ -9,7 +9,7 @@ body{
 }
 
 .jumbotron,.jumbotron-materi{
-    background: linear-gradient(45deg, #6E2BF1, #2f1466);
+    background: linear-gradient(to right, #6E2BF1, #2f1466);
     padding: 40px;
     color: white;
 }
