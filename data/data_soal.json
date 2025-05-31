@@ -1,0 +1,111 @@
+{
+  "html1": [
+    {
+      "pertanyaan": "Apa kepanjangan dari HTML?",
+      "pilihan": ["HyperText Markup Language", "HyperText Markdown Language", "HighText Markup Language", "HyperTool Markup Language"],
+      "jawaban": "HyperText Markup Language"
+    },
+    {
+      "pertanyaan": "HTML digunakan untuk?",
+      "pilihan": ["Mendesain tampilan komputer", "Menulis kode Python", "Membuat struktur halaman web", "Mengatur database"],
+      "jawaban": "Membuat struktur halaman web"
+    },
+    {
+      "pertanyaan": "Siapa yang menciptakan HTML?",
+      "pilihan": ["Bill Gates", "Tim Berners-Lee", "Mark Zuckerberg", "Brendan Eich"],
+      "jawaban": "Tim Berners-Lee"
+    },
+    {
+      "pertanyaan": "HTML pertama kali diperkenalkan pada tahun?",
+      "pilihan": ["1985", "1991", "1995", "2000"],
+      "jawaban": "1991"
+    },
+    {
+      "pertanyaan": "HTML merupakan singkatan dari?",
+      "pilihan": ["HyperText Machine Language", "Hyper Transfer Markup Language", "HyperText Markup Language", "Home Tool Markup Language"],
+      "jawaban": "HyperText Markup Language"
+    },
+    {
+      "pertanyaan": "Salah satu tools untuk menulis HTML adalah?",
+      "pilihan": ["Adobe Premiere", "Notepad", "MS Excel", "AutoCAD"],
+      "jawaban": "Notepad"
+    },
+    {
+      "pertanyaan": "Editor teks modern yang sering digunakan untuk menulis HTML adalah?",
+      "pilihan": ["Visual Studio Code", "Photoshop", "PowerPoint", "SketchUp"],
+      "jawaban": "Visual Studio Code"
+    },
+    {
+      "pertanyaan": "HTML bukanlah bahasa pemrograman karena?",
+      "pilihan": ["Tidak bisa digunakan di internet", "Tidak bisa menampilkan gambar", "Tidak memiliki logika pemrograman", "Tidak mendukung CSS"],
+      "jawaban": "Tidak memiliki logika pemrograman"
+    },
+    {
+      "pertanyaan": "HTML merupakan bagian dari teknologi?",
+      "pilihan": ["Frontend", "Backend", "Database", "Compiler"],
+      "jawaban": "Frontend"
+    },
+    {
+      "pertanyaan": "File HTML biasanya disimpan dengan ekstensi?",
+      "pilihan": [".doc", ".pdf", ".html", ".exe"],
+      "jawaban": ".html"
+    }
+  ],
+  "html2": [
+    {
+      "pertanyaan": "Apa fungsi &lt;!DOCTYPE html&gt; dalam dokumen HTML?",
+      "pilihan": ["Menentukan bahasa dokumen", "Mendefinisikan tag utama", "Memberi judul halaman", "Menentukan versi HTML"],
+      "jawaban": "Menentukan versi HTML"
+    },
+    {
+      "pertanyaan": "Tag utama yang membungkus seluruh elemen HTML adalah?",
+      "pilihan": ["&lt;body&gt;", "&lt;head&gt;", "&lt;html&gt;", "&lt;main&gt;"],
+      "jawaban": "&lt;html&gt;"
+    },
+    {
+      "pertanyaan": "Semua elemen metadata ditulis di dalam tag?",
+      "pilihan": ["&lt;body&gt;", "&lt;footer&gt;", "&lt;head&gt;", "&lt;section&gt;"],
+      "jawaban": "&lt;head&gt;"
+    },
+    {
+      "pertanyaan": "Elemen &lt;body&gt; berfungsi untuk?",
+      "pilihan": ["Menampilkan data pengguna", "Menyimpan metadata", "Menampilkan isi utama halaman", "Menampilkan URL"],
+      "jawaban": "Menampilkan isi utama halaman"
+    },
+    {
+      "pertanyaan": "Tag &lt;title&gt; digunakan untuk?",
+      "pilihan": ["Menampilkan isi utama", "Menentukan judul halaman di tab browser", "Menulis teks paragraf", "Menambahkan gambar"],
+      "jawaban": "Menentukan judul halaman di tab browser"
+    },
+    {
+      "pertanyaan": "Yang termasuk metadata adalah?",
+      "pilihan": ["&lt;meta&gt;", "&lt;div&gt;", "&lt;section&gt;", "&lt;p&gt;"],
+      "jawaban": "&lt;meta&gt;"
+    },
+    {
+      "pertanyaan": "Struktur dasar HTML dimulai dengan tag?",
+      "pilihan": ["&lt;html&gt;", "&lt;head&gt;", "&lt;body&gt;", "&lt;!DOCTYPE html&gt;"],
+      "jawaban": "&lt;!DOCTYPE html&gt;"
+    },
+    {
+      "pertanyaan": "Tag &lt;meta charset='UTF-8'&gt; digunakan untuk?",
+      "pilihan": ["Menentukan warna halaman", "Menampilkan judul", "Menentukan encoding karakter", "Mengatur ukuran font"],
+      "jawaban": "Menentukan encoding karakter"
+    },
+    {
+      "pertanyaan": "Tag yang digunakan untuk menuliskan script JavaScript biasanya diletakkan di?",
+      "pilihan": ["&lt;meta&gt;", "&lt;body&gt;", "&lt;script&gt;", "&lt;title&gt;"],
+      "jawaban": "&lt;script&gt;"
+    },
+    {
+      "pertanyaan": "Struktur HTML yang benar adalah?",
+      "pilihan": [
+        "&lt;html&gt;&lt;body&gt;&lt;head&gt;&lt;/head&gt;&lt;/body&gt;&lt;/html&gt;",
+        "&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;",
+        "&lt;html&gt;&lt;title&gt;&lt;/title&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;",
+        "&lt;head&gt;&lt;body&gt;&lt;/body&gt;&lt;html&gt;&lt;/html&gt;"
+      ],
+      "jawaban": "&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"
+    }
+  ]
+}

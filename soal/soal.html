@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis HTML</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+
+    .pilihan label { 
+         
+        margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Kuis HTML</h1>
+
+  <div id="kontainer-soal"></div>
+<button id="submitBtn">Submit Jawaban</button>
+<div id="hasil"></div>
+
+
+  <script src="/js/script.js"></script>
+
+<script>
+  // Ambil nilai key dari parameter URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const key = urlParams.get('key');
+
+  // Panggil fungsi untuk tampilkan soal
+  if (key) {
+    tampilkanSoal(key);
+  } else {
+    document.getElementById("kontainer-soal").innerHTML = "<p>Tidak ada soal yang diminta.</p>";
+  }
+</script>
+
+</body>
+</html>

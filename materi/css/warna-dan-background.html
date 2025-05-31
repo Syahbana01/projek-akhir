@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warna dan Background</title>
+    <link rel="stylesheet" href="/style/materi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-light">
+        <div class="container-lg ">
+            <a class="navbar-brand fw-bold fs-2" href="#">PIAN}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
+                        Beranda</a>
+                    <a class="nav-link" href="/materi.html"><i class="fa-solid fa-book"></i> Materi</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="jumbotron-judul text-center">
+        <h1>Warna Background</h1>
+        <p>Mempelajari cara mengatur warna teks dan background.</p>
+        <div class=" py-4">
+            <a class="btn-border-purple" href="#materi">Latihan soal</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class=" box-materi">
+        <div class="teks justify-text">
+            <p>Warna dan latar belakang merupakan elemen penting dalam desain web karena berperan besar dalam
+                menciptakan estetika, memperjelas hierarki informasi, dan meningkatkan kenyamanan pengguna saat membaca.
+                CSS menyediakan beragam properti yang bisa digunakan untuk mengatur warna teks, warna latar belakang,
+                gambar latar, dan lainnya dengan sangat fleksibel.</p>
+            <h3>Color Property</h3>
+            <p>Properti color digunakan untuk mengatur warna teks pada elemen HTML. Ini adalah cara paling dasar dalam
+                memperindah teks. Warna dapat diterapkan pada berbagai elemen seperti paragraf, heading, link, dan
+                sebagainya.</p>
+            <p>Kode di atas akan membuat semua teks dalam elemen &lt;p&gt; berwarna merah.</p>
+            <p>Namun, kamu tidak hanya terbatas pada nama warna seperti red, blue, atau green. CSS mendukung format
+                warna lain seperti kode heksadesimal (HEX), RGB, dan HSL. Hal ini memberikan kontrol yang lebih presisi
+                terhadap tampilan warna yang diinginkan.</p>
+            <h3>Background Properties</h3>
+            <p>Properti background adalah sekumpulan properti CSS yang digunakan untuk mengatur latar belakang suatu
+                elemen. Ini mencakup warna latar belakang, gambar latar, pengulangan gambar, posisi, dan lainnya.
+                Beberapa properti latar belakang yang umum digunakan adalah:</p>
+            <ul>
+                <li>background-color: untuk menentukan warna latar belakang.</li>
+                <li>background-image: untuk menetapkan gambar sebagai latar belakang.</li>
+                <li>background-repeat: untuk mengatur apakah gambar latar diulang atau tidak.</li>
+                <li>background-position: untuk mengatur posisi gambar latar.</li>
+                <li>background-size: untuk mengatur ukuran gambar latar.</li>
+                <li>background: shorthand untuk semua properti di atas.</li>
+            </ul>
+            <p>Dengan kode di atas, latar belakang halaman web akan memiliki warna abu terang, dan elemen dengan class
+                .hero akan menampilkan gambar latar yang diperbesar secara proporsional dan ditempatkan di tengah.</p>
+            <h3>Nilai warna (HEX, RGB, HSL)</h3>
+            <p>CSS mendukung beberapa format dalam menetapkan warna:</p>
+            <ul>
+                <li>HEX menggunakan angka dan huruf untuk mewakili warna dalam format #RRGGBB. Setiap pasangan mewakili
+                    nilai merah, hijau, dan biru.</li>
+                <li>RGB (Red, Green, Blue) Format ini menuliskan nilai merah, hijau, dan biru secara eksplisit, dari 0
+                    hingga 255.</li>
+                <li>HSL (Hue, Saturation, Lightness)
+                    Format HSL menggunakan konsep warna berdasarkan roda warna. Hue dalam derajat (0–360), Saturation
+                    dan Lightness dalam persen (%).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-materi">
+        <a class="btn-purple" href="">Materi selanjutnya</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">PIAN</h4>
+                    <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
+                        frontend.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">MATERI</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">HTML</a></li>
+                        <li><a href="#" class="text-decoration-none">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">TENTANG</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">TIM</a></li>
+                        <li><a href="#" class="text-decoration-none">CONTACT</a></li>
+                        <li><a href="#" class="text-decoration-none">KEBIJAKAN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">
+                © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- bagian js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const examples = {
+            komentar:
+                `/* ini merupakan komentar satu baris */
+ 
+/* CSS juga mendukung komentar lebih dari satu baris,
+  seluruh teks yang berada pada pembuka dan penutup sebuah komentar
+  akan diabaikan oleh browser sebagai compiler.
+*/
+
+`,
+            selector:
+                `<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f9f9f9;
+        }
+
+        .judul {
+            color: darkblue;
+            font-size: 24px;
+        }
+
+        #deskripsi {
+            font-style: italic;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="judul">Belajar CSS</h1>
+    <p id="deskripsi">CSS membuat web jadi cantik dan profesional.</p>
+</body>
+</html>
+
+`,
+            external:
+                `<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh External CSS</title>
+    <link rel="stylesheet" href="/style/materi.css">
+  </head>
+  <body>
+  </body>
+</html>`,
+            embedded:
+                `<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Internal/Embedded CSS</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p>Ini paragraf dengan gaya dari internal CSS.</p>
+</body>
+</html>
+`,
+            inline:
+                `<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh Inline CSS</title>
+  </head>
+  <body>
+    <h1 style="color:red; font-family:sans-serif;">Selamat Datang</h1>
+  </body>
+</html>`,
+        };
+
+        document.querySelectorAll('.editor').forEach((el, index) => {
+            const key = el.dataset.content;
+            const editor = ace.edit(el, {
+                theme: "ace/theme/twilight",
+                mode: "ace/mode/html",
+                fontSize: 14,
+            });
+
+            editor.setValue(examples[key], -1);
+            const preview = document.querySelector(`.preview[data-content="${key}"]`);
+            const updatePreview = () => {
+                const code = editor.getValue().replace(/\/\*[\s\S]*?\*\//g, ''); // menghapus semua komentar CSS
+                const doc = preview.contentDocument || preview.contentWindow.document;
+                doc.open();
+                doc.write(code);
+                doc.close();
+            };
+
+            editor.session.on('change', updatePreview);
+            updatePreview();
+        });
+    </script>
+
+</body>
+
+</html>
