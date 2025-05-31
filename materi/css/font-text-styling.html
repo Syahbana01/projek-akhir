@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font dan Text styling</title>
+    <link rel="stylesheet" href="/style/materi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        mark {
+            background-color: yellow;
+        }
+
+        .img-html{
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 1px 2px #020006ab;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-light">
+        <div class="container-lg ">
+            <a class="navbar-brand fw-bold fs-2" href="#">PIAN}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
+                        Beranda</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-book"></i> Tahapan Belajar</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="jumbotron-judul text-center">
+        <h1>Font dan Text Styling</h1>
+        <p>Belajar cara mengatur tampilan teks dan font pada halaman web.</p>
+        <div class=" py-4">
+            <a class="btn-border-purple" href="#materi">Latihan soal</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class=" box-materi">
+        <div class="teks justify-text">
+            <!-- Font family dan size -->
+            <h3>Font family dan font size</h3>
+            <h4>Font family</h4>
+            <p>font-family adalah properti dalam CSS yang digunakan untuk menentukan jenis huruf (font) yang akan digunakan untuk teks pada halaman web. Font atau huruf sangat berpengaruh pada penampilan dan kenyamanan membaca. Dengan font-family, kamu bisa memilih gaya tulisan yang sesuai dengan desain dan tujuan halaman web, misalnya formal, santai, modern, atau klasik.</p>
+            <p>Ada beberapa kelompok font yang bisa digunakan:</p>
+            <p>
+                <ul>
+                    <li>serif : Font dengan garis hias (contoh: Times New Roman)</li>
+                    <li>sans-serif : Font tanpa garis hias dengan lebih modern (contoh: Arial)</li>
+                    <li>monospace : Semua huruf memiliki lebar yang sama (contoh: Courier New)</li>
+                    <li>cursive : Seperti tulisan tangan (contoh: Brush Script)</li>
+                    <li>fantasty: Gaya yang dekoratif/kreatif (contoh: Impact)</li>
+                </ul>
+            </p>
+            <p>Penggunaan font-family dalam desain web sangat penting karena menentukan tampilan teks, yang secara langsung memengaruhi kesan visual, kenyamanan membaca, dan profesionalisme halaman web. Dengan memilih font yang sesuai, kamu bisa menciptakan suasana yang tepat apakah itu formal, santai, modern, atau klasik. Menambahkan beberapa nama font sebagai cadangan juga merupakan praktik yang baik agar tampilan teks tetap konsisten meskipun perangkat pengguna tidak memiliki font utama. Dengan memahami dan menggunakan font-family secara tepat, kamu dapat membuat tampilan halaman web yang lebih menarik, mudah dibaca, dan ramah pengguna.</p>
+
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4>
+            <!--Code editor family-->
+            <section class="material-content">
+                <div class="editor" data-content="family"></div>
+                <iframe class="preview" data-content="family"></iframe>
+            </section><br>
+
+            <h4>Font s ize</h4>
+            <p>font-size adalah properti dalam CSS yang digunakan untuk mengatur ukuran teks pada halaman web. Dengan font-size, kamu bisa membuat teks menjadi lebih besar atau kecil sesuai kebutuhan, agar lebih mudah dibaca dan tampil menarik.</p>
+            <ul>
+                <li>px (piksel) : Satuan paling umum. Bersifat tetap, tidak berubah meskipun ukuran layar berbeda. Contoh: font-size: 18px;</li>
+                <li>em : Bersifat relatif terhadap ukuran font elemen induknya. Contoh: font-size: 1.2em; berarti 120% dari font induk.</li>
+                <li>% (persen) : Juga relatif terhadap font induk. Contoh: font-size: 120%;</li>
+                <li>rem : Relatif terhadap ukuran font root (html). Lebih konsisten dari em. Contoh: font-size: 1.5rem;</li>
+                <li>vw (viewport width) : Ukuran berdasarkan lebar layar. Biasanya dipakai untuk desain responsif.</li>
+            </ul>
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4>
+            <!-- kode editor size -->
+            <section class="material-content">
+                <div class="editor" data-content="size"></div>
+                <iframe class="preview" data-content="size"></iframe>
+            </section><br><hr>
+
+            <!-- text align dan decor -->
+            <h3>Text alignment dan decoration</h3>
+            <h4>Text alignment</h4>
+            <p>Text alignment atau dalam bahasa Indonesia disebut perataan teks, adalah cara untuk menentukan bagaimana teks disusun secara horizontal di dalam suatu elemen HTML, seperti paragraf (&lt;p&gt;), heading (&lt;h1&gt;-&lt;h6&gt;), div (&lt;div&gt;), atau elemen lainnya. Text alignment diatur menggunakan properti CSS yang disebut text-align. Properti ini membantu menyusun posisi teks agar terlihat lebih rapi, mudah dibaca, dan sesuai dengan tata letak (layout) yang diinginkan dalam desain halaman web.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nilai</th>
+                        <th>Kegunaan / Penjelasan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>left</td>
+                        <td>Teks akan disusun ke kiri. Ini adalah nilai default untuk bahasa Latin.</td>
+                    </tr>
+                    <tr>
+                        <td>right</td>
+                        <td>Teks akan sejajar ke kanan. Sering digunakan untuk elemen khusus atau bahasa RTL.</td>
+                    </tr>
+                    <tr>
+                        <td>center</td>
+                        <td>Teks akan berada di tengah. Umum dipakai untuk judul atau kutipan.</td>
+                    </tr>
+                    <tr>
+                        <td>justify</td>
+                        <td>Teks diratakan kiri dan kanan, membuat tampilan teks lebih simetris. Cocok untuk paragraf panjang seperti di koran atau dokumen resmi.</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4><br>
+            <!-- kode editor align -->
+            <section class="material-content">
+                <div class="editor" data-content="align"></div>
+                <iframe class="preview" data-content="align"></iframe>
+            </section><br>
+            <p>Fungsi nya yaitu berupa pengaturan posisi teks secara horizontal dalam sebuah halaman web, baik ke kiri, kanan, tengah, maupun rata kiri-kanan. Pengaturan ini membantu memperjelas struktur konten dengan membedakan bagian-bagian penting, seperti judul, isi paragraf, atau catatan tambahan. Selain itu, text alignment juga meningkatkan keterbacaan karena teks yang tertata rapi lebih nyaman dibaca oleh pengguna. Dari sisi tampilan, perataan teks mendukung estetika desain halaman agar terlihat lebih teratur dan profesional. Text alignment juga berperan dalam menyesuaikan arah bahasa. Misalnya, untuk bahasa yang dibaca dari kanan ke kiri seperti Arab, perataan ke kanan akan membuat teks lebih mudah diikuti. Dengan kata lain, penggunaan text alignment yang tepat membuat tampilan teks menjadi lebih rapi, enak dilihat, dan mudah dipahami oleh pembaca.</p>
+
+            <h4>Decoration</h4>
+            <p>Text decoration adalah sebuah properti dalam CSS yang digunakan untuk memberikan hiasan atau efek visual tambahan pada teks di halaman web. Dengan menggunakan text-decoration, kita bisa menambahkan garis di bawah teks (underline), garis di atas (overline), garis tengah (line-through), atau bahkan menghapus semua dekorasi teks (none). Properti ini tidak langsung ditulis di HTML, melainkan digunakan melalui CSS untuk mempercantik tampilan teks dan menyesuaikan gaya visual halaman web. Misalnya, link secara default biasanya memiliki garis bawah, dan itu bisa dikontrol dengan text-decoration. Penggunaan text decoration berguna untuk menekankan informasi tertentu, membedakan jenis teks seperti tautan atau judul, dan membantu menciptakan tampilan yang konsisten dan menarik secara visual.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nilai</th>
+                        <th>Kegunaan / Penjelasan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>none</td>
+                        <td>Menghapus dekorasi bawaan (seperti garis bawah pada link).</td>
+                    </tr>
+                    <tr>
+                        <td>underline</td>
+                        <td>Memberi garis bawah pada teks.</td>
+                    </tr>
+                    <tr>
+                        <td>overline</td>
+                        <td>Memberi garis di atas teks.</td>
+                    </tr>
+                    <tr>
+                        <td>line-through</td>
+                        <td>Memberi garis di tengah teks (sering digunakan untuk mencoret harga lama).</td>
+                    </tr>
+                    <tr>
+                        <td>underline overline</td>
+                        <td>Kombinasi garis atas dan bawah.</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4><br>
+            <!-- kode editor decor -->
+            <section class="material-content">
+                <div class="editor" data-content="decor"></div>
+                <iframe class="preview" data-content="decor"></iframe>
+            </section><br>
+            <p>text decoration digunakan untuk menunjukkan link atau navigasi. Secara default, teks pada elemen &lt;a&gt; (tautan) akan memiliki garis bawah, yang memberi tanda visual kepada pengguna bahwa teks tersebut bisa diklik dan mengarah ke halaman lain. Text decoration juga digunakan untuk memberi gaya atau efek visual pada tampilan teks. Misalnya, garis tengah (line-through) bisa dipakai untuk menunjukkan harga yang sudah didiskon, atau garis atas (overline) digunakan untuk memberi sentuhan desain khusus. Dengan kata lain, text decoration tidak hanya mempercantik tampilan teks, tetapi juga membantu memperjelas fungsi dan makna teks bagi pengguna.</p>
+            <hr>
+
+            <!-- line dan letter -->
+            <h3>Line height dan letter spacing</h3>
+            <h4>Line height</h4>
+            <p> Sebuah properti di CSS yang dipakai buat ngatur jarak vertikal antar baris teks. Jadi, kalau kamu punya paragraf yang panjang, line-height ini yang ngatur seberapa renggang atau rapat jarak antara baris satu dengan baris berikutnya. Bayangin aja kamu lagi ngetik di WhatsApp atau Notes, terus kamu lihat teks-nya dempet banget sampai susah dibaca — nah, itu karena line-height-nya kecil. Kalau jaraknya dikasih longgar, teks-nya jadi lebih nyaman dilihat dan dibaca.</p>
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4><br>
+            <!-- kode editor line -->
+            <section class="material-content">
+                <div class="editor" data-content="line"></div>
+                <iframe class="preview" data-content="line"></iframe>
+            </section><br>
+            <p>Dengan line-height yang tepat, teks terlihat lebih rapi dan teratur, sehingga tidak membuat mata cepat lelah. Selain itu, pengaturan jarak antar baris ini juga membantu memperindah tampilan halaman web, karena membuat teks terlihat lebih clean, estetis, dan profesional. Line-height juga mendukung desain yang konsisten dan enak dipandang, menjadikan pengalaman membaca di website lebih menyenangkan dan nyaman bagi pengguna.</p>
+
+            <h4>Letter spacing</h4>
+            <p>letter-spacing itu properti di CSS yang dipakai buat ngatur jarak antar huruf dalam teks. Jadi, kalau kamu ngerasa huruf-huruf di tulisanmu terlalu rapet kayak orang rebutan tempat duduk di angkot, kamu bisa ngatur jaraknya biar lebih longgar dan keliatan lebih estetik. Bayangin kamu ngetik “HELLO” terus hurufnya dempet banget, itu bikin susah dibaca. Nah, pake letter-spacing, kamu bisa atur biar huruf-huruf itu punya ruang buat “bernapas”.</p>
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4><br>
+            <!-- kode editor line -->
+            <section class="material-content">
+                <div class="editor" data-content="letter"></div>
+                <iframe class="preview" data-content="letter"></iframe>
+            </section><br>
+            <p>Fungsinya adalah untuk memberikan ruang tambahan atau mengurangi jarak antara satu huruf dengan huruf lainnya agar teks terlihat lebih rapi, mudah dibaca, dan memiliki tampilan visual yang lebih menarik. Dengan pengaturan jarak huruf yang tepat, teks akan terasa lebih lega, tidak terlihat padat atau berdesakan, sehingga lebih nyaman dibaca—terutama pada teks yang berukuran kecil atau heading yang tebal. Selain itu, letter-spacing juga bisa digunakan untuk menciptakan kesan desain tertentu, seperti tampilan yang elegan, modern, minimalis, atau bahkan artistik. Properti ini sering digunakan pada judul, logo, atau elemen teks yang ingin ditonjolkan secara visual. Nilai letter-spacing bisa disesuaikan dengan kebutuhan desain, baik dengan menambah (nilai positif) maupun mengurangi (nilai negatif) jarak antar huruf.</p>
+        </div>
+    </div>
+
+    <div class="btn-materi">
+        <a class="btn-purple" href="">Materi selanjutnya</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">PIAN</h4>
+                    <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
+                        frontend.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">MATERI</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">HTML</a></li>
+                        <li><a href="#" class="text-decoration-none">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">TENTANG</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">TIM</a></li>
+                        <li><a href="#" class="text-decoration-none">CONTACT</a></li>
+                        <li><a href="#" class="text-decoration-none">KEBIJAKAN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">
+                © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- bagian js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const examples = {
+            family:
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+  <style>
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+    }
+    .judul {
+      font-family: "Verdana", sans-serif;
+    }
+  </style>
+  <title>Contoh Font Family</title>
+</head>
+<body>
+  <h1 class="judul">Judul Menggunakan Verdana</h1>
+  <p>Ini adalah paragraf dengan font Georgia atau Times New Roman.</p>
+</body>
+</html>`, 
+size:
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+  <style>
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .keterangan {
+      font-size: 0.9em;
+    }
+  </style>
+  <title>Contoh Font Size</title>
+</head>
+<body>
+  <h1>Judul Besar</h1>
+  <p>Ini adalah paragraf biasa dengan ukuran font 16px.</p>
+  <p class="keterangan">Teks keterangan yang sedikit lebih kecil.</p>
+</body>
+</html>`,
+align:
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Text Alignment</title>
+  <style>
+    .rata-kiri {
+      text-align: left;
+    }
+    .rata-kanan {
+      text-align: right;
+    }
+    .tengah {
+      text-align: center;
+    }
+    .rata-kiri-kanan {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="tengah">Judul Halaman</h1>
+
+  <p class="rata-kiri">Ini paragraf yang diratakan ke kiri. Biasanya digunakan untuk isi teks biasa karena mudah dibaca secara alami.</p>
+
+  <p class="rata-kanan">Paragraf ini diratakan ke kanan. Kadang digunakan untuk desain khusus atau bahasa yang dibaca dari kanan ke kiri.</p>
+
+  <p class="rata-kiri-kanan">
+    Ini paragraf dengan perataan justify. Teks akan memenuhi seluruh baris, sejajar di kiri dan kanan. Hasilnya terlihat rapi dan formal, mirip seperti dokumen koran atau laporan resmi.
+  </p>
+
+</body>
+</html>`,
+decor:
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Text Decoration</title>
+  <style>
+    .garis-bawah {
+      text-decoration: underline;
+    }
+
+    .tanpa-garis {
+      text-decoration: none;
+    }
+
+    .garis-atas {
+      text-decoration: overline;
+    }
+
+    .coret {
+      text-decoration: line-through;
+    }
+
+    .gabungan {
+      text-decoration: underline overline;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="garis-bawah">Teks ini memiliki garis bawah.</p>
+  <p class="tanpa-garis"><a href="#">Tautan ini tidak memiliki garis bawah.</a></p>
+  <p class="garis-atas">Teks ini memiliki garis di atas.</p>
+  <p class="coret">Rp 500.000 <span class="coret">Rp 750.000</span></p>
+  <p class="gabungan">Teks ini punya garis atas dan bawah.</p>
+
+</body>
+</html>`,
+line:
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Line Height</title>
+  <style>
+    .rapat {
+      line-height: 1;
+    }
+
+    .pas {
+      line-height: 1.5;
+    }
+
+    .lega {
+      line-height: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Line Height Rapat</h2>
+  <p class="rapat">Teks ini punya line-height 1. Barisnya dempet banget, bikin mata tegang.</p>
+
+  <h2>Line Height Pas</h2>
+  <p class="pas">Teks ini pakai line-height 1.5. Renggangnya pas, nyaman dibaca, cocok buat paragraf umum.</p>
+
+  <h2>Line Height Lega</h2>
+  <p class="lega">Teks ini pakai line-height 2. Jarak antar barisnya lebih longgar, cocok buat desain yang minimalis dan clean.</p>
+
+</body>
+</html>`,
+letter:
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Letter Spacing</title>
+  <style>
+    .normal {
+      letter-spacing: normal;
+    }
+
+    .renggang {
+      letter-spacing: 3px;
+    }
+
+    .demper {
+      letter-spacing: -1px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="normal">Ini Teks Normal</h2>
+  <h2 class="renggang">Ini Teks Renggang</h2>
+  <h2 class="demper">Ini Teks Dempetan</h2>
+
+</body>
+</html>`
+
+        };
+        
+
+        document.querySelectorAll('.editor').forEach((el, index) => {
+            const key = el.dataset.content;
+            const editor = ace.edit(el, {
+                theme: "ace/theme/twilight",
+                mode: "ace/mode/html",
+                fontSize: 14,
+            });
+
+            editor.setValue(examples[key], -1);
+            const preview = document.querySelector(`.preview[data-content="${key}"]`);
+            const updatePreview = () => {
+                const code = editor.getValue();
+                const doc = preview.contentDocument || preview.contentWindow.document;
+                doc.open();
+                doc.write(code);
+                doc.close();
+            };
+
+            editor.session.on('change', updatePreview);
+            updatePreview();
+        });
+    </script>
+
+</body>
+
+</html>

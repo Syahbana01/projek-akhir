@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan HTML</title>
+    <link rel="stylesheet" href="/style/materi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        mark {
+            background-color: yellow;
+        }
+
+        .img-html{
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 1px 2px #020006ab;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-light">
+        <div class="container-lg ">
+            <a class="navbar-brand fw-bold fs-2" href="#">PIAN}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
+                        Beranda</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-book"></i> Tahapan Belajar</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="jumbotron-judul text-center">
+        <h1>Struktur Dasar HTML</h1>
+        <p>Mempelajari struktur dasar dokumen HTML dan tag-tag penting. </p>
+        <div class=" py-4">
+            <a class="btn-border-purple" href="#materi">Latihan soal</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class=" box-materi">
+        <div class="teks justify-text">
+            <!-- doctype dan tag html -->
+            <h3>Doctype dan Tag HTML</h3>
+            <p> &lt;Doctype html&gt; adalah deklarasi tipe dokumen (doctype) yang digunakan pada baris pertama dalam dokumen HTML. Deklarasi ini berfungsi untuk memberi tahu browser bahwa halaman web ditulis menggunakan standar HTML5, yaitu versi HTML terbaru dan paling umum digunakan saat ini. Tujuan utama dari &lt;Doctype html&gt; adalah untuk memastikan browser menampilkan halaman web dalam mode standar (standards mode). Dengan begitu, tampilan halaman akan konsisten di berbagai browser dan perangkat. Jika deklarasi ini tidak dituliskan, browser bisa masuk ke quirks mode, yaitu mode tampilan lama yang tidak sepenuhnya mengikuti standar HTML dan CSS. Hal ini dapat menyebabkan halaman web terlihat berbeda atau rusak di beberapa browser.</p>
+            <img width="250px" class="img-html" src="/images/doctype-html.png" alt="doctype html"> <br>
+            <p> &lt;Doctype html&gt; adalah deklarasi penting yang digunakan di awal dokumen HTML untuk memberi tahu browser bahwa dokumen tersebut menggunakan standar HTML5. Dengan menyertakan deklarasi ini, browser akan menampilkan halaman web dalam mode standar, yang memastikan tampilan konsisten dan sesuai aturan HTML/CSS modern. Meskipun sederhana &lt;Doctype html&gt; berperan besar dalam menjaga kompatibilitas dan kestabilan tampilan halaman di berbagai browser. Oleh karena itu, deklarasi ini wajib dituliskan pada setiap dokumen HTML.</p>
+            <hr>
+            
+            <!-- tag head dan body -->
+            <h3>Tag Head dan Body</h3>
+            <h4>Tag Head</h4>
+            <p>Tag &lt;head&gt; adalah bagian dari dokumen HTML yang berisi informasi meta atau informasi pendukung tentang halaman web, bukan konten utama yang ditampilkan di browser. Isi dari <head> tidak langsung terlihat oleh pengguna, tapi sangat penting bagi browser dan mesin pencari.Isi umum yang ada dalam &lt;head&lg;: </p>
+            <ul>
+                <li>&lt;title&gt; -> Menentukan judul halaman yang muncul di tab browser. </li>
+                <li>&lt;meta&gt; ->  Memberikan informasi tambahan seperti charset (karakter encoding), deskripsi, dan kata kunci halaman.</li>
+                <li>&lt;link&gt; -> Menghubungkan halaman ke file eksternal seperti CSS (stylesheet)</li>
+                <li>&lt;style&gt; -> Menyisipkan CSS langsung dalam dokumen. </li>
+                <li>&lt;script&gt; -> Menyisipkan atau menghubungkan JavaScript.</li>
+            </ul>
+            <img class="img-html" width="500px" src="/images/tag-head-html.png" alt="tag head html"><br>
+            <p>Tag &lt;head&gt; dalam HTML berfungsi sebagai tempat untuk menyimpan informasi penting tentang halaman web yang tidak ditampilkan secara langsung kepada pengguna, tetapi dibutuhkan oleh browser dan mesin pencari. Elemen-elemen seperti &lt;title&gt;, &lt;meta&gt;, &lt;link&gt;, dan &lt;sctipt&gt; biasanya ditempatkan di dalamnya untuk mengatur judul halaman, pengkodean karakter, pemanggilan file CSS atau JavaScript, dan informasi pendukung lainnya. Dengan kata lain, tag &lt;head&gt; berperan sebagai bagian "pengatur" dari halaman web, yang membantu memastikan bahwa halaman dapat ditampilkan dan berfungsi dengan baik sesuai standar web.</p>
+
+            <h4>Tag Body</h4>
+            <p>Tag &lt;body&gt; adalah bagian utama dari dokumen HTML yang berisi semua konten yang akan ditampilkan di layar oleh browser. Apa pun yang ingin kamu tampilkan kepada pengguna (teks, gambar, video, tombol, dll) harus diletakkan di dalam tag &lt;body&gt;.</p>
+            <ul>
+                <li>&lt;p&gt; -> Berupa teks paragraf pada bagian body</li>
+                <li>&lt;h1&gt;-&lt;h6&gt; -> Menentukan judul pada bagian isi atau body</li>
+                <li>&lt;img&gt; -> Untuk mengimport gambar</li>
+                <li>&lt;table&gt; -> Menginisiasikan tabel pada HTML</li>
+                <li>&lt;form&gt; -> Untuk menyajikan formulir</li>
+                <li>&lt;button&gt; -> Untuk memunculkan fitur tombol pada body</li>
+            </ul>
+            <img class="img-html" width="500px" src="/images/tag-body-html.png" alt="tag body html"><br>
+            <p>Tag &lt;body&gt; adalah bagian utama dari dokumen HTML yang berisi seluruh konten yang akan ditampilkan kepada pengguna di browser, seperti teks, gambar, video, tombol, dan elemen-elemen interaktif lainnya. Semua yang ingin dilihat dan digunakan oleh pengunjung website harus diletakkan di dalam tag ini. Dengan kata lain, &lt;body&gt; merupakan "tubuh" dari halaman web yang menyajikan isi sebenarnya kepada pengguna.</p>
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4>
+            <!-- kode editor body -->
+            <section class="material-content">
+                <div class="editor" data-content="body"></div>
+                <iframe class="preview" data-content="body"></iframe>
+            </section><br>
+
+            <h5>Hubungan &lt;head&gt; dan &lt;body&gt;</h5>
+            <p>Tag &lt;head&gt; dan &lt;body&gt; dalam HTML bekerja sama untuk membentuk halaman web yang lengkap. Tag &lt;head&gt; berisi informasi pendukung seperti judul halaman, metadata, dan link ke CSS atau JavaScript yang diperlukan agar halaman berfungsi dengan baik. Sementara itu, tag &lt;body&gt; berisi semua konten yang ditampilkan kepada pengguna, seperti teks, gambar, dan tombol. Keduanya saling melengkapi &lt;head&gt; mengatur di balik layar, sedangkan &lt;body&gt;.> menampilkan hasilnya di layar.</p>
+            <hr>
+
+            <!-- metadata dan title -->
+            <h3>Metadata dan Title</h3>
+            <h4>Metadata</h4>
+            <p>Metadata adalah informasi tentang data, atau lebih tepatnya, informasi tambahan tentang halaman web yang digunakan oleh browser, mesin pencari (seperti Google), dan media sosial. Metadata tidak ditampilkan langsung di halaman web, tapi penting untuk fungsi teknis dan SEO (Search Engine Optimization). Metadata ditempatkan di dalam tag &lt;head&gt; dan biasanya ditulis menggunakan tag &lt;meta&gt;.</p>
+            <img class="img-html" width="600px" src="/images/metadata-html.png" alt="metadata html"><br>
+            <p>Metadata ditulis menggunakan tag &lt;meta&gt; dan diletakkan di dalam bagian &lt;head&gt; pada dokumen HTML. Beberapa contoh metadata termasuk pengaturan jenis huruf (charset), deskripsi halaman, nama penulis, kata kunci, dan pengaturan tampilan di perangkat mobile.</p>
+
+            <h4>Title</h4>
+            <p>Tag &lt;title&gt; adalah elemen HTML yang digunakan untuk memberikan judul pada halaman web. Tag ini tidak menampilkan teksnya langsung di dalam halaman yang dilihat pengguna, tetapi judul ini akan muncul di bagian atas tab browser dan juga akan terlihat sebagai judul utama saat halaman muncul di hasil pencarian mesin pencari seperti Google, Bing, atau Yahoo.</p>
+            <img class="img-html" width="500px" src="/images/title-html.png" alt="tag title html"><br>
+            <p>Tag &lt;title&gt; dalam HTML berfungsi untuk memberikan judul halaman web yang tampil di tab browser seperti contoh diatas pada bagian tab browser akan bernama "belajar HTML dasar". Kemudian digunakan sebagai judul utama di hasil pencarian mesin pencari seperti Google. Judul ini membantu pengguna mengenali dan membedakan halaman saat membuka banyak tab, menyimpan bookmark, atau melihat riwayat penelusuran. Selain itu, tag &lt;title&gt; sangat penting untuk SEO dan pengalaman pengguna, karena judul yang jelas dan relevan akan memudahkan orang memahami isi halaman sebelum membukanya. Setiap halaman HTML wajib memiliki satu tag &lt;title&gt;, dan judul yang digunakan sebaiknya singkat, padat, dan sesuai dengan isi konten halaman. Tag ini menjadi identitas penting dari sebuah halaman web, meskipun tidak terlihat langsung dalam isi halaman.</p>
+        </div>
+    </div>
+
+    <div class="btn-materi">
+        <a class="btn-purple" href="">Materi selanjutnya</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">PIAN</h4>
+                    <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
+                        frontend.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">MATERI</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">HTML</a></li>
+                        <li><a href="#" class="text-decoration-none">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">TENTANG</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">TIM</a></li>
+                        <li><a href="#" class="text-decoration-none">CONTACT</a></li>
+                        <li><a href="#" class="text-decoration-none">KEBIJAKAN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">
+                © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- bagian js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const examples = {
+            body:
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh HTML Sederhana</title>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1>Judul Utama (H1)</h1>
+  <h2>Subjudul (H2)</h2>
+  <h3>Sub-subjudul (H3)</h3>
+  <h4>Judul Kecil (H4)</h4>
+  <h5>Judul Lebih Kecil (H5)</h5>
+  <h6>Judul Terkecil (H6)</h6>
+
+  <!-- Paragraf -->
+  <p>Ini adalah paragraf contoh. HTML digunakan untuk membuat struktur halaman web.</p>
+
+  <!-- Gambar -->
+  <img src="https://via.placeholder.com/150" alt="Contoh Gambar" width="150" height="150">
+
+  <!-- Tabel -->
+  <h2>Contoh Tabel</h2>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th>Nama</th>
+      <th>Umur</th>
+      <th>Kota</th>
+    </tr>
+    <tr>
+      <td>Ani</td>
+      <td>20</td>
+      <td>Bandung</td>
+    </tr>
+    <tr>
+      <td>Budi</td>
+      <td>22</td>
+      <td>Jakarta</td>
+    </tr>
+  </table>
+
+  <!-- Formulir -->
+  <h2>Formulir Pendaftaran</h2>
+  <form action="#" method="post">
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea><br><br>
+
+    <!-- Tombol -->
+    <button type="submit">Kirim</button>
+  </form>
+
+</body>
+</html>`
+
+        };
+
+        document.querySelectorAll('.editor').forEach((el, index) => {
+            const key = el.dataset.content;
+            const editor = ace.edit(el, {
+                theme: "ace/theme/twilight",
+                mode: "ace/mode/html",
+                fontSize: 14,
+            });
+
+            editor.setValue(examples[key], -1);
+            const preview = document.querySelector(`.preview[data-content="${key}"]`);
+            const updatePreview = () => {
+                const code = editor.getValue();
+                const doc = preview.contentDocument || preview.contentWindow.document;
+                doc.open();
+                doc.write(code);
+                doc.close();
+            };
+
+            editor.session.on('change', updatePreview);
+            updatePreview();
+        });
+    </script>
+
+</body>
+
+</html>

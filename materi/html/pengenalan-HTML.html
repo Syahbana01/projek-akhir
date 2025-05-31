@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +9,42 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        mark {
+            background-color: yellow;
+        }
+
+        .img-html{
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 1px 2px #020006ab;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,22 +71,149 @@
     <!-- Container -->
     <div class="jumbotron-judul text-center">
         <h1>Pengenalan HTML</h1>
-        <p>Memahami dasar-dasar HTML dan perannya dalam pembuatan Website.</p>
+        <p>Mengenal apa itu HTML dan bagaimana perannya dalam pembuatan Website.</p>
         <div class=" py-4">
-            <a class="btn-border-purple" onclick="window.location.href='../../soal/soal.html?key=html1'">Latihan soal</a>
+            <a class="btn-border-purple" href="#materi">Latihan soal</a>
         </div>
     </div>
 
     <!-- Content -->
-    <div class="container box-materi">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident sapiente corporis aliquid, molestiae quia
-            voluptatum fuga earum. Fugiat excepturi,
-            maiores amet repellat libero sit dolore, iste, deleniti alias modi ex.</p>
-        <img src="/images/anatomi-elemen-HTML.png" alt="anatomi elemen HTML"><br><br>
-        <section class="material-content">
-            <div class="editor" data-content="anatomi"></div>
-            <iframe class="preview" data-content="anatomi"></iframe>
-        </section>
+    <div class=" box-materi">
+        <div class="teks justify-text">
+            <!-- pengertain html -->
+            <h3>Pengertian HTML</h3>
+            <p>HTML (HyperText Markup Language) adalah bahasa standar 
+                yang digunakan untuk membuat dan menyusun struktur 
+                halaman web yang bisa ditampilkan di browser internet. 
+                HTML bukanlah bahasa pemrograman seperti JavaScript atau 
+                Python, melainkan bahasa markup yang berfungsi untuk 
+                menandai dan mengatur bagian-bagian dari sebuah halaman 
+                \web, seperti judul, paragraf, gambar, tautan, tabel, dan 
+                elemen lainnya.</p>
+            <img width="250px" class="img-html" src="/images/html.svg" alt="logo html">
+            <p>Fungsi utama HTML adalah memberikan struktur pada sebuah 
+                halaman web. Dengan HTML, kita bisa menentukan mana yang 
+                merupakan judul halaman, paragraf, gambar, tautan (link), 
+                tabel, daftar, dan elemen-elemen lainnya. Setiap bagian 
+                dari halaman web ditandai dengan tag HTML tertentu, misalnya:</p>
+            <p>Berikut contoh elemen HTML yang umum digunakan:</p>
+            <p>
+                <ul>
+                    <li>&lt;h&gt; : Untuk judul atau heading</li>
+                    <li>&lt;p&gt; : Untuk paragraf</li>
+                    <li>&lt;a&gt; : Untuk tautan atau link</li>
+                    <li>&lt;img&gt; : Untuk gambar</li>
+                    <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; : Untuk daftar</li>
+                </ul>
+            </p>
+            <p>HTML bekerja dengan cara memberikan instruksi kepada 
+                browser tentang bagaimana sebuah konten harus ditampilkan. 
+                Misalnya, jika kamu ingin menampilkan sebuah paragraf, kamu 
+                cukup menuliskan teks di antara tag &lt;p&gt; dan &lt;/p&gt;. 
+                Browser akan membaca tag tersebut dan menampilkan teks sebagai 
+                sebuah paragraf.</p>
+
+            <h4>Ayo coba kode yang telah dipelajari!!!</h4>
+            <!--Code editor HTML-->
+            <section class="material-content">
+                <div class="editor" data-content="anatomi"></div>
+                <iframe class="preview" data-content="anatomi"></iframe>
+            </section><br>
+
+            <p>Tanpa HTML, sebuah halaman web tidak akan memiliki struktur 
+                yang jelas. Semua konten akan terlihat berantakan dan sulit 
+                dibaca. HTML juga memudahkan pengembang web untuk menambahkan 
+                elemen-elemen lain seperti gambar, video, formulir, dan 
+                sebagainya. Selain itu, HTML juga menjadi dasar bagi teknologi 
+                web lainnya seperti CSS (untuk mempercantik tampilan) dan 
+                JavaScript (untuk membuat halaman menjadi interaktif).</p>
+            <hr>
+            
+            <!-- sejarah  html -->
+            <h3>Sejarah HTML</h3>
+            <p>HTML (HyperText Markup Language) pertama kali dikembangkan 
+                oleh <i>Tim Berners-Lee</i>, seorang fisikawan di CERN 
+                (Organisasi Eropa untuk Riset Nuklir), Swiss. <b>Pada tahun 1989</b>, 
+                Berners-Lee mengusulkan sebuah sistem berbasis hypertext untuk 
+                memudahkan para ilmuwan CERN dalam berbagi dan mengakses dokumen 
+                secara efisien melalui jaringan komputer. Sebelum lanjut membahas sejarah 
+                makin jauh kita harus mengenal siapa sih itu Tim Berners-Lee, Tim Berners-Lee adalah 
+                seorang ilmuwan komputer dan fisikawan asal Inggris yang dikenal luas 
+                sebagai pencipta World Wide Web (WWW). Ia lahir pada <b>8 Juni 1955</b> di 
+                London dan menempuh pendidikan tinggi di Universitas Oxford, di mana 
+                ia lulus dengan gelar di bidang fisika pada tahun 1976. Sejak muda, 
+                Berners-Lee telah menunjukkan minat dan kreativitas dalam bidang teknologi
+                , bahkan merakit komputer pertamanya dari komponen televisi bekas.</p>
+            <p>Pada akhir tahun 1991, Tim Berners-Lee merilis dokumen pertama yang 
+                menjelaskan tentang HTML, yang dikenal sebagai "HTML Tags". Dokumen 
+                ini memuat 18 tag dasar yang menjadi fondasi awal HTML. HTML sendiri 
+                awalnya dirancang berdasarkan SGML (Standard Generalized Markup 
+                Language), sebuah standar internasional untuk pembuatan dokumen 
+                dengan tanda markup.</p>
+            <img class="img-html" width="500px" src="/images/tim-Berners-Lee.jpg" alt="tim Berners-Lee">
+            <p>Perkembangan HTML dari versi awal ke versi sekarang :</p>
+            <ul>
+                <li>HTML 1.0 : secara resmi dipublikasikan pada tahun 1993 oleh Internet 
+                    Engineering Task Force (IETF). Versi ini menjadi standar awal bagi 
+                    penulisan dokumen web yang dapat dibaca oleh browser. Pada masa itu, 
+                    browser pertama yang mendukung HTML adalah WorldWideWeb 
+                    (kemudian berganti nama menjadi Nexus), diikuti oleh browser lain 
+                    seperti Lynx, Mosaic, dan Arena.</li>
+                <li>HTML 2.0 :Dirilis pada November 1995 oleh IETF sebagai penyempurnaan 
+                    dari HTML+ (1993). Versi ini menjadi standar resmi pertama HTML yang 
+                    banyak digunakan.</li>
+                <li>HTML 3.2 : Pada Januari 1997, World Wide Web Consortium (W3C) mengambil 
+                    alih pengembangan HTML dan merilis HTML 3.2, memperkenalkan banyak fitur 
+                    baru dan menjadi standar web global.</li>
+                <li>HTML 4.0 dan 4.1 : Dirilis pada Desember 1997 dan April 1998, membawa 
+                    pembaruan besar seperti pemisahan antara struktur (HTML) dan tampilan 
+                    (CSS), serta penghapusan beberapa elemen yang sudah usang.</li>
+                <li>HTML 5 : Mulai dikembangkan sejak 2008 dan resmi dirilis pada Oktober 
+                    2014, HTML5 membawa banyak fitur baru seperti dukungan multimedia 
+                    (audio, video), grafis, serta peningkatan integrasi dengan CSS dan 
+                    JavaScript. HTML5 menjadi standar utama yang digunakan hingga saat ini.</li>
+            </ul>
+            <p>Sejak awal kemunculannya, HTML telah menjadi pondasi utama dalam pengembangan web. 
+                Standarisasi dan pengembangannya kini dikelola oleh W3C, memastikan HTML terus 
+                relevan dan mampu memenuhi kebutuhan teknologi web modern</p>
+            <hr>
+
+            <!-- tools untuk html -->
+            <h3>Tools untuk menulis HTML</h3>
+            <ul>
+                <li style="font-size: 22px;"> Visual Studio Code</li>
+                <p>Visual Studio Code adalah editor kode modern yang sangat populer dan 
+                    sering digunakan oleh pemula hingga profesional. Aplikasi ini bisa 
+                    kamu unduh secara gratis dan berjalan di Windows, macOS, maupun Linux. 
+                    VS Code punya tampilan yang sederhana namun fitur-fiturnya sangat lengkap. 
+                    Salah satu fitur terbaiknya adalah IntelliSense, yaitu sistem yang bisa 
+                    menebak dan menyarankan kode yang kamu ketik, sehingga kamu tidak perlu 
+                    mengingat semua perintah HTML. Selain itu, VS Code juga bisa memperingatkan 
+                    jika ada kesalahan dalam kode dan bisa langsung digunakan untuk mengecek 
+                    hasilnya. Kamu juga bisa menambahkan ekstensi untuk bahasa pemrograman atau 
+                    tema sesuai kebutuhanmu.</p>
+                <p><i>Notes</i> : Cocok untuk Pemula yang ingin belajar HTML dengan bantuan fitur pintar yang memudahkan.</p>
+
+                <li style="font-size: 22px;"> Sublime Text</li>
+                
+                <p>Sublime Text adalah editor yang terkenal karena ringan dan sangat cepat. Meskipun 
+                    tampilannya sederhana, editor ini memiliki banyak fitur keren seperti multiple 
+                    selection, yang memungkinkan kamu mengedit beberapa bagian kode secara bersamaan. 
+                    Walaupun Sublime Text bisa digunakan secara gratis, sebenarnya ia adalah software 
+                    berbayar. Namun, kamu tetap bisa menggunakannya tanpa membayar, hanya akan muncul 
+                    pengingat sesekali.</p>
+                <p><i>Notes</i> : Cocok untuk Pemula yang ingin editor cepat, ringan, dan tidak terlalu banyak fitur yang membingungkan.</p>
+
+                <li style="font-size: 22px;"> Notepad++</li>
+                <p>Notepad++ adalah editor teks ringan dan cepat yang hanya tersedia untuk sistem 
+                    operasi Windows. Meski sederhana, Notepad++ memiliki fitur penting seperti syntax 
+                    highlighting, multi-tab editing, dan pencarian cepat yang membuat penulisan kode 
+                    menjadi lebih mudah. Editor ini juga mendukung plugin untuk menambahkan 
+                    fungsionalitas tambahan. Notepad++ sangat cocok bagi pemula atau siapa saja 
+                    yang membutuhkan editor dasar tanpa terlalu banyak fitur tambahan.</p>
+                <p><i>Notes</i> : Cocok untuk Pengguna baru yang ingin mulai belajar HTML dari editor yang simpel.</p>
+            </ul>
+        </div>
     </div>
 
     <div class="btn-materi">
@@ -98,13 +260,15 @@
     <script>
         const examples = {
             anatomi:
-                `<!DOCTYPE html>
+`<!DOCTYPE html>
 <html>
   <head>
-    <title>Ini adalah judul</title>
+    <title>Contoh Halaman HTML</title>
   </head>
   <body>
-    <h1>helloword</h1>
+    <h1>Selamat Datang di Website Saya</h1>
+    <p>Ini adalah paragraf pertama di halaman web saya.</p>
+    <a href="https://www.google.com">Kunjungi Google</a>
   </body>
 </html>`
         };
@@ -131,6 +295,7 @@
             updatePreview();
         });
     </script>
+
 </body>
 
 </html>
