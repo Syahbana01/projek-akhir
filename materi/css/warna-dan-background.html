@@ -49,14 +49,20 @@
                 menciptakan estetika, memperjelas hierarki informasi, dan meningkatkan kenyamanan pengguna saat membaca.
                 CSS menyediakan beragam properti yang bisa digunakan untuk mengatur warna teks, warna latar belakang,
                 gambar latar, dan lainnya dengan sangat fleksibel.</p>
+            <hr>
             <h3>Color Property</h3>
             <p>Properti color digunakan untuk mengatur warna teks pada elemen HTML. Ini adalah cara paling dasar dalam
                 memperindah teks. Warna dapat diterapkan pada berbagai elemen seperti paragraf, heading, link, dan
                 sebagainya.</p>
+            <section class="material-content">
+                <div class="editor" data-content="pred"></div>
+                <iframe class="preview" data-content="pred"></iframe>
+            </section><br>
             <p>Kode di atas akan membuat semua teks dalam elemen &lt;p&gt; berwarna merah.</p>
             <p>Namun, kamu tidak hanya terbatas pada nama warna seperti red, blue, atau green. CSS mendukung format
                 warna lain seperti kode heksadesimal (HEX), RGB, dan HSL. Hal ini memberikan kontrol yang lebih presisi
                 terhadap tampilan warna yang diinginkan.</p>
+            <hr>
             <h3>Background Properties</h3>
             <p>Properti background adalah sekumpulan properti CSS yang digunakan untuk mengatur latar belakang suatu
                 elemen. Ini mencakup warna latar belakang, gambar latar, pengulangan gambar, posisi, dan lainnya.
@@ -69,8 +75,13 @@
                 <li>background-size: untuk mengatur ukuran gambar latar.</li>
                 <li>background: shorthand untuk semua properti di atas.</li>
             </ul>
-            <p>Dengan kode di atas, latar belakang halaman web akan memiliki warna abu terang, dan elemen dengan class
-                .hero akan menampilkan gambar latar yang diperbesar secara proporsional dan ditempatkan di tengah.</p>
+            <section class="material-content">
+                <div class="editor" data-content="properties"></div>
+                <iframe class="preview" data-content="properties"></iframe>
+            </section><br>
+            <p>Dengan kode di atas, latar belakang halaman web akan memiliki warna hijau, dan elemen dengan class
+                .box akan menampilkan gambar yang memiliki latar gambar css dan atribute lainnya.</p>
+            <hr>
             <h3>Nilai warna (HEX, RGB, HSL)</h3>
             <p>CSS mendukung beberapa format dalam menetapkan warna:</p>
             <ul>
@@ -82,6 +93,10 @@
                     Format HSL menggunakan konsep warna berdasarkan roda warna. Hue dalam derajat (0–360), Saturation
                     dan Lightness dalam persen (%).</li>
             </ul>
+            <section class="material-content">
+                <div class="editor" data-content="formatWarna"></div>
+                <iframe class="preview" data-content="formatWarna"></iframe>
+            </section><br>
         </div>
     </div>
 
@@ -128,72 +143,95 @@
 
     <script>
         const examples = {
-            komentar:
-                `/* ini merupakan komentar satu baris */
- 
-/* CSS juga mendukung komentar lebih dari satu baris,
-  seluruh teks yang berada pada pembuka dan penutup sebuah komentar
-  akan diabaikan oleh browser sebagai compiler.
-*/
-
-`,
-            selector:
+            pred:
                 `<!DOCTYPE html>
 <html>
 <head>
     <style>
-        body {
-            font-family: Arial;
-            background-color: #f9f9f9;
-        }
-
-        .judul {
-            color: darkblue;
-            font-size: 24px;
-        }
-
-        #deskripsi {
-            font-style: italic;
-            color: gray;
-        }
-    </style>
-</head>
-<body>
-    <h1 class="judul">Belajar CSS</h1>
-    <p id="deskripsi">CSS membuat web jadi cantik dan profesional.</p>
-</body>
-</html>
-
-`,
-            external:
-                `<!DOCTYPE html>
-<html>
-  <head>
-    <title>Contoh External CSS</title>
-    <link rel="stylesheet" href="/style/materi.css">
-  </head>
-  <body>
-  </body>
-</html>`,
-            embedded:
-                `<!DOCTYPE html>
-<html>
-<head>
-    <title>Contoh Internal/Embedded CSS</title>
-    <style>
-        body {
-            background-color: #f0f0f0;
-        }
         p {
-            color: blue;
-            font-size: 18px;
+            color: red;
         }
     </style>
 </head>
 <body>
-    <p>Ini paragraf dengan gaya dari internal CSS.</p>
+    <p>Warna ini berubah jadi warna merah.</p>
 </body>
 </html>
+
+`,
+            properties:
+                `<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: green; /* Warna latar belakang umum halaman */
+    }
+    .box {
+      background-image: url('/images/css.svg'); /* Menetapkan gambar sebagai latar belakang */
+      background-repeat: no-repeat; /* Gambar tidak diulang */
+      background-position: right top; /* Gambar berada di kanan atas */
+      background-size: 100px 100px; /* Ukuran gambar 100x100px */
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff; /* Latar belakang fallback jika gambar gagal dimuat */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>Haloooooo sobat PIAN.</p>
+  </div>
+</body>
+</html>
+`,
+            formatWarna:
+                `<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .hex {
+      background-color: #3498db; /* Biru menggunakan HEX */
+      color: white;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .rgb {
+      background-color: rgb(46, 204, 113); /* Hijau menggunakan RGB */
+      color: white;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .hsl {
+      background-color: hsl(48, 100%, 67%); /* Kuning menggunakan HSL */
+      color: black;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hex">
+    <h3>Warna HEX</h3>
+    <p>Warna ini ditentukan dengan kode HEX: <code>#3498db</code>.</p>
+  </div>
+
+  <div class="rgb">
+    <h3>Warna RGB</h3>
+    <p>Warna ini ditentukan dengan format RGB: <code>rgb(46, 204, 113)</code>.</p>
+  </div>
+
+  <div class="hsl">
+    <h3>Warna HSL</h3>
+    <p>Warna ini ditentukan dengan format HSL: <code>hsl(48, 100%, 67%)</code>.</p>
+  </div>
+
+</body>
+</html>
+
 `,
             inline:
                 `<!DOCTYPE html>
