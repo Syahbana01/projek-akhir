@@ -1,90 +1,99 @@
-let jawabanBenar = {}; // untuk simpan jawaban benar dari JSON nanti
+// JavaScript
+let jawabanBenar = {}; // Menyimpan jawaban benar berdasarkan nama input radio
 
 function tampilkanSoal(key) {
   fetch('/data/data_soal.json')
     .then(res => res.json())
     .then(data => {
-      const soal = data[key];
-      if (!soal) {
-        console.error("Key soal tidak ditemukan:", key);
-        return;
-      }
-
       const kontainer = document.getElementById("kontainer-soal");
       kontainer.innerHTML = "";
 
-      jawabanBenar = {};  // reset jawaban benar
+      const soalList = data[key];
+      if (!soalList) {
+        kontainer.innerHTML = "<p>Soal tidak ditemukan.</p>";
+        return;
+      }
 
-      soal.forEach((item, index) => {
-        jawabanBenar[`soal-${index}`] = item.jawaban; // sesuaikan dengan JSON
+      soalList.forEach((soal, index) => {
+        const namaRadio = `soal-${index}`;
+        jawabanBenar[namaRadio] = soal.jawaban;
 
-        const div = document.createElement("div");
-        div.className = "soal";
+        const divSoal = document.createElement("div");
+        divSoal.className = "question-box";
 
-        const pertanyaan = document.createElement("p");
-        pertanyaan.innerHTML = `${index + 1}. ${item.pertanyaan}`;
-        div.appendChild(pertanyaan);
+        divSoal.innerHTML = `
+          <h5 class="mb-3">
+            <span class="question-number badge bg-primary me-2">${index + 1}</span>
+            ${soal.pertanyaan}
+          </h5>
+        `;
 
         const pilihanDiv = document.createElement("div");
-        pilihanDiv.className = "pilihan";
 
-        item.pilihan.forEach((opsi, i) => {
-          const id = `soal-${index}-opsi-${i}`;
-          const input = document.createElement("input");
-          input.type = "radio";
-          input.name = `soal-${index}`;
-          input.id = id;
-          input.value = opsi;
-
+        soal.pilihan.forEach((opsi, i) => {
+          const id = `${namaRadio}-opsi-${i}`;
           const label = document.createElement("label");
-          label.htmlFor = id;
-          label.innerHTML = opsi;
+          label.className = "form-control mb-2 d-flex align-items-center gap-2";
+          label.setAttribute("for", id);
 
-          pilihanDiv.appendChild(input);
+          label.innerHTML = `
+            <input type="radio" name="${namaRadio}" id="${id}" value="${opsi}" class="form-check-input">
+            <span>${opsi}</span>
+          `;
+
           pilihanDiv.appendChild(label);
-          pilihanDiv.appendChild(document.createElement("br"));
         });
 
-        div.appendChild(pilihanDiv);
-        kontainer.appendChild(div);
+        divSoal.appendChild(pilihanDiv);
+        kontainer.appendChild(divSoal);
       });
     })
     .catch(err => {
-      console.error("Error fetching soal:", err);
+      console.error("Gagal memuat soal:", err);
     });
 }
 
-// Fungsi cek jawaban dan hitung nilai
 function cekJawaban() {
-  let totalSoal = Object.keys(jawabanBenar).length;
+  let total = 0;
   let benar = 0;
 
-  for (let key in jawabanBenar) {
-    const pilihan = document.querySelector(`input[name="${key}"]:checked`);
-    if (pilihan && pilihan.value === jawabanBenar[key]) {
+  for (const nama in jawabanBenar) {
+    total++;
+    const dipilih = document.querySelector(`input[name="${nama}"]:checked`);
+    if (dipilih && dipilih.value === jawabanBenar[nama]) {
       benar++;
     }
   }
 
-  const nilai = (benar / totalSoal) * 100;
   const hasilDiv = document.getElementById("hasil");
 
-  if (!hasilDiv) {
-    alert("Elemen hasil tidak ditemukan di HTML!");
+  if (total === 0) {
+    hasilDiv.innerHTML = `❌ Soal tidak ditemukan atau belum dijawab.`;
+    hasilDiv.className = "text-danger mt-3 fw-bold";
     return;
   }
 
+  const nilai = (benar / total) * 100;
+
   if (nilai >= 80) {
-    hasilDiv.innerHTML = `Selamat! Nilai kamu ${nilai.toFixed(2)}%. Kamu mendapatkan reward 🎉`;
+    hasilDiv.className = "text-success mt-3 fw-bold";
+    hasilDiv.innerHTML = `🎉 Selamat! Nilai kamu <strong>${nilai.toFixed(2)}%</strong>.`;
   } else {
-    hasilDiv.innerHTML = `Maaf, nilai kamu ${nilai.toFixed(2)}%. Kamu gagal dan bisa coba lagi.`;
+    hasilDiv.className = "text-danger mt-3 fw-bold";
+    hasilDiv.innerHTML = `❌ Maaf, nilai kamu <strong>${nilai.toFixed(2)}%</strong>. Silakan coba lagi.`;
   }
+
+  resetJawaban();
 }
 
-const btnSubmit = document.getElementById("submitBtn");
-if (btnSubmit) {
-  btnSubmit.addEventListener("click", cekJawaban);
-} else {
-  console.warn("Tombol submitBtn tidak ditemukan");
+function resetJawaban() {
+  Object.keys(jawabanBenar).forEach(nama => {
+    const radios = document.querySelectorAll(`input[name="${nama}"]`);
+    radios.forEach(radio => {
+      radio.checked = false;
+    });
+  });
 }
-tampilkanSoal('html1');
+
+// Event listener
+document.getElementById("submitBtn").addEventListener("click", cekJawaban);

@@ -116,7 +116,7 @@ footer a {
     height: 50vh;
   }
 
-  .box-materi p{
+  .box-materi p,li{
     font-size: 12px;
   }
 }
