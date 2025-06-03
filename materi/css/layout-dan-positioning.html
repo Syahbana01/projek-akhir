@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warna dan Background</title>
+    <link rel="stylesheet" href="/style/materi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm bg-light">
+        <div class="container-lg ">
+            <a class="navbar-brand fw-bold fs-2" href="#">PIAN}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
+                        Beranda</a>
+                    <a class="nav-link" href="/materi.html"><i class="fa-solid fa-book"></i> Materi</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="jumbotron-judul text-center">
+        <h1>Layout dan Positioning</h1>
+        <p>Mempelajari cara mengatur posisi elemen dalam halaman web.</p>
+        <div class=" py-4">
+            <a class="btn-border-purple" href="#materi">Latihan soal</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class=" box-materi">
+        <div class="teks justify-text">
+            <p><strong>Layout dan Positioning</strong> dalam CSS digunakan untuk mengatur tata letak elemen dalam halaman web.
+            Layout mengatur struktur umum seperti header, konten, dan footer. Sementara itu, positioning menentuka posisi elemen,
+        baik relatif terhadap elemen lain atau jendela browser. Properti penting yang digunakan (disply, position, float, dan clear).</p>
+            <hr>
+            <h3>Display Property</h3>
+            <p>Properti <code>display</code>mengatur elemen ditampilan. Contoh property <code>block</code> <code>inline</code></p>
+            </p>
+            <section class="material-content">
+                <div class="editor" data-content="elementSelector"></div>
+                <iframe class="preview" data-content="elementSelector"></iframe>
+            </section><br>
+            <p>Kode diatas membuat contoh semua elemen &lt;p&gt; akan otomatis berwarna biru</p>
+            <hr>
+            <h3>Class dan ID selector</h3>
+            <p><strong>Class Selector</strong> digunakan untuk memilih <strong>satu atau beberapa elemen HTML</strong>
+                yang memiliki
+                atribut <i>class.</i> Dalam CSS, kita menuliskannya
+                dengan tanda titik (.) diikuti nama class. Class ini sangat fleksibel karena bisa digunakan lebih dari
+                satu dari berbagai elemen yang berbeda.
+                Ini cocok untuk membuat style yang dapat dugunakan berulang, seperti design layout kolom, tombol dan
+                kartu.</p>
+            <section class="material-content">
+                <div class="editor" data-content="classSelector"></div>
+                <iframe class="preview" data-content="classSelector"></iframe>
+            </section><br>
+            <p><strong>ID Selector</strong> digunakan untuk memilih elemen HTML yang memiliki atribut <i>id.</i> Dalam
+                CSS, kita menuliskannya dengan tanda pagar (#) diikuti nama ID.
+                ID ini unik, artinya hanya boleh <strong>digunakan pada satu elemen HTML</strong> dalam halaman web. ID
+                biasanya digunakan
+                untuk elemen yang spesifik, seperti header atau footer.</p>
+            <p>Berikut contoh penggunaan class dan ID selector:</p>
+
+            <section class="material-content">
+                <div class="editor" data-content="idSelector"></div>
+                <iframe class="preview" data-content="idSelector"></iframe>
+            </section><br>
+
+            <p>Dengan <strong>class selector,</strong> kita bisa membuat style yang bisa dipakai berulang.
+                Dengan <strong>ID selector,</strong> kita memberi gaya pada elemen unik.</p>
+            <hr>
+            <h3>Kombinasi Selector</h3>
+            <p><strong>Kombinasi Selector</strong> digunakan ketika kita ingin menargetkan elemen secara lebih spesifik
+                berdasarkan struktur HMTL-nya atau lebih dari satu kondisi./p>
+            <section class="material-content">
+                <div class="editor" data-content="kombinasiSelector"></div>
+                <iframe class="preview" data-content="kombinasiSelector"></iframe>
+            </section><br>
+        </div>
+    </div>
+
+    <div class="btn-materi">
+        <a class="btn-purple" href="">Materi selanjutnya</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">PIAN</h4>
+                    <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
+                        frontend.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">MATERI</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">HTML</a></li>
+                        <li><a href="#" class="text-decoration-none">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">TENTANG</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">TIM</a></li>
+                        <li><a href="#" class="text-decoration-none">CONTACT</a></li>
+                        <li><a href="#" class="text-decoration-none">KEBIJAKAN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">
+                © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- bagian js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const examples = {
+            elementSelector:
+                `<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Warna ini berubah jadi warna merah.</p>
+</body>
+</html>
+
+`,
+            classSelector:
+                `<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .kotak1 {
+      background-color: #e0f7fa; /* Warna biru muda */
+      padding: 15px;
+      border-radius: 8px;
+      color: #333;-
+    }
+    .kotak2 {
+      background-color: #f2f2f2; /* Warna abu-abu terang */
+      padding: 15px;
+      border-radius: 8px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="kotak1">Ini kotak pertama</div>
+  <div class="kotak2">Ini kotak kedua</div>
+</body>
+</html>
+`,
+            idSelector:
+                `<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #judul-utama {
+      font-size: 28px;
+      color: #0066cc;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="judul-utama">Selamat Datang di Websita Kami</h1>
+</body>
+</html>
+`,
+            kombinasiSelector:
+                `<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Kombinasi selector1: semua <p> di dalam <div> */
+    div p {
+    color: green;
+    font-style: italic;
+    }
+
+    /* Kombinasi selector lainnya:
+       Gaya ini diterapkan ke <p> dan <li> sekaligus */
+    h3, li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ff6347; /* Warna merah */
+    }
+        /* Kombinasi selector 3: <div> dengan class "box" */
+    div.box {
+      background-color: #e0e0e0;
+      padding: 10px;
+      border-left: 5px solid steelblue;
+      margin-bottom: 15px;
+    }
+
+    /* Kombinasi selector 4: <section> dengan ID "info" yang berisi <h2> */
+    #info h2 {
+      color: darkblue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <div>
+    <p>Paragraf ini berada di dalam elemen &lt;div&gt;, jadi style hijau dan miring.</p>
+  </div>
+
+  <h3>Ini adalah paragraf yang mendapatkan style dari selector kombinasi h3, li.</h3>
+
+  <ul>
+    <li>Item pertama dalam list</li>
+    <li>Item kedua dalam list</li>
+  </ul>
+
+
+  <div class="box">
+    Ini adalah div dengan class "box" — styling khusus karena gabungan selector div.box
+  </div>
+
+  <section id="info">
+    <h2>Informasi Tambahan</h2>
+    <p>Hanya h2 dalam section ini yang terkena selector gabungan ID + elemen.</p>
+  </section>
+
+</body>
+</html>
+`,
+        };
+
+        document.querySelectorAll('.editor').forEach((el, index) => {
+            const key = el.dataset.content;
+            const editor = ace.edit(el, {
+                theme: "ace/theme/twilight",
+                mode: "ace/mode/html",
+                fontSize: 14,
+            });
+
+            editor.setValue(examples[key], -1);
+            const preview = document.querySelector(`.preview[data-content="${key}"]`);
+            const updatePreview = () => {
+                const code = editor.getValue().replace(/\/\*[\s\S]*?\*\//g, ''); // menghapus semua komentar CSS
+                const doc = preview.contentDocument || preview.contentWindow.document;
+                doc.open();
+                doc.write(code);
+                doc.close();
+            };
+
+            editor.session.on('change', updatePreview);
+            updatePreview();
+        });
+    </script>
+
+</body>
+
+</html>
