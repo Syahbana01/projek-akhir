@@ -35,22 +35,54 @@ body{
     text-align: center;
 }
 
-.btn-purple{
+.btn-purple {
     text-decoration: none;
     color: #6E2BF1;
     background-color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 0 2px 5px #020006ab;
+    transition: all 0.15s ease-in-out;
+    display: inline-block;
+    font-weight: bold;
 }
 
-.btn-border-purple{
+.btn-purple:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn-purple:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn-border-purple {
     text-decoration: none;
     color: white;
     border: 2px solid white;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
-    box-shadow: 0 2px 5px #020006ab;
+    background-color: transparent;
+    box-shadow: 0 5px 10px #020006ab;
+    transition: all 0.2s ease;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-border-purple:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(110, 43, 241, 0.3);
+    border-color: #6E2BF1;
+    color: #6E2BF1;
+    background-color: white;
+}
+
+.btn-border-purple:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .why {
@@ -89,17 +121,34 @@ footer,footer a{
 
 .btn-color-orange {
     background-color: #ff5722;
-    color: white;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display:block;
+    text-align: center;
 }
 
 .btn-color-orange:hover {
-    background-color: rgb(255, 103, 47) ;
-    color: white;
+    background-color: #ff7043;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.btn-color-orange:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
 @media (max-width: 768px) {
     .jumbotron .gambar {
-        transform: rotate(6deg); 
         width: 80%;
         margin: 0 auto 2rem;
         margin: 20px;
