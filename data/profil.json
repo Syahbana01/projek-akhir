@@ -1,7 +1,6 @@
 [
   {
     "nama": "Muhammad Iqbal Ramadhan",
-<<<<<<< HEAD
     "pekerjaan": "Founder & Developer",
     "foto": "images/Muhammad Iqbal Ramadhan.jpg"
   },
@@ -14,28 +13,5 @@
     "nama": "Nur Laily Azkiya",
     "pekerjaan": "Designer & UX Specialist",
     "foto": "/images/Nur Laily Azkiya.jpg"
-=======
-    "nim": "2410131210025",
-    "kerjaan": "Founder & Developer",
-    "email": "baaaaal.aja@gmail.com",
-    "quotes": "buahahahaha",
-    "foto": "/images/Muhammad Iqbal Ramadhan.jpg"
-  },
-  {
-    "nama": "Muhammad Syahbana",
-    "nim": "",
-    "kerjaan": "Content Creator & Editor",
-    "email": "",
-    "quotes": "",
-    "foto": "/images/Muhammad Syahbana.jpg"
-  },
-  {
-    "nama": "Nur Laily Azkiya",
-    "nim": "",
-    "kerjaan": "Designer & UX Specialist",
-    "email": "",
-    "quotes": "",
-    "foto": "https://i.pravatar.cc/150?img=20"
->>>>>>> ec6e88a45aa7f9c48896efe850648fe14055dbb0
   }
 ]
