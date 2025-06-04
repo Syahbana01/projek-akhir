@@ -43,14 +43,14 @@
         "jawaban": "1991"
       },
       {
-        "pertanyaan": "HTML merupakan singkatan dari?",
+        "pertanyaan": " Fitur baru yang diperkenalkan dalam HTML5 adalah",
         "pilihan": [
-          "HyperText Machine Language",
-          "Hyper Transfer Markup Language",
-          "HyperText Markup Language",
-          "Home Tool Markup Language"
+          "Penghapusan elemen &lt;div&gt;",
+          "Perkenalan bahasa pemrograman baru",
+          "Pemisahan antara HTML dan XML",
+          "Dukungan grafis, audio, dan video "
         ],
-        "jawaban": "HyperText Markup Language"
+        "jawaban": "Dukungan grafis, audio, dan video "
       }
     ]
   },
