@@ -11,6 +11,31 @@
     <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,8 +52,8 @@
                     <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
                         Beranda</a>
                     <a class="nav-link" href="/materi.html"><i class="fa-solid fa-book"></i> Materi</a>
-
-                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="/tentang-kami.html"><i class="fa-solid fa-users"></i> Tentang Kami</a>
                 </div>
             </div>
         </div>
@@ -37,7 +62,7 @@
     <!-- Container -->
     <div class="jumbotron-judul text-center">
         <h1>Formulir HTML</h1>
-        <p>Memahami dasar-dasar HTML dan perannya dalam pembuatan Website.</p>
+        <p>Mempelajari cara membuat formulir interaktif untuk mengumpulkan data.</p>
         <div class=" py-4">
             <a class="btn-border-purple" href="#materi">Latihan soal</a>
         </div>
@@ -47,231 +72,264 @@
     <div class=" box-materi">
         <div class="teks justify-text">
             <h3>Tag Form &lt;form&gt; dan Atributnya</h3>
-            <p>Tag &lt;form&gt; digunakan untuk membuat sebuah formulir dalam halaman web, Formulir ini memungkinkan
-                pengguna mengisi
-                dan mengirimkan data. </p>
-            <p>Berikut Beberapa atribut penting pada tag &lt;form&gt;:</p>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><code>action</code></td>
-                    <td>URL tujuan tempat data formulir dikirim.</td>
-                    <td><code>&lt;form action="/submit"&gt;</code></td>
-                </tr>
-                <tr>
-                    <td><code>method</code></td>
-                    <td>Metode pengiriman data, bisa <code>GET</code> atau <code>POST</code>.</td>
-                    <td><code>&lt;form method="POST"&gt;</code></td>
-                </tr>
-            </tbody>
-            </table>
+            <p>Saat kamu membuka website toko online, lalu ingin
+            <ul>
+                <ol>
+                    <li>Mengisi nama dan alamat pengiriman</li>
+                    <li>Memilih metode pembayaran</li>
+                    <li>Menekan tombol "Kirim"</li>
+                </ol>
+            </ul>
+            Nah, semua itu kamu lakukan di dalam <b>formulir</b>, dan di HTML kita menggunakan tag &lt;form&gt; untuk
+            membuatnya. Form itu seperti <i>wadah</i> untuk elemen inputan yang akan dikirimkan ke server.
+            </p>
+            <p>Tag &lt;form&gt; memiliki beberapa atribut penting:</p>
+            <ul>
+                <li><code>action</code>: Alamat URL tujuan saat formulir dikirimkan.</li>
+                <li><code>method</code>: Metode pengiriman data, biasanya <code>GET</code> atau <code>POST</code>.</li>
+                <li><code>enctype</code>: Tipe pengkodean data yang digunakan saat mengirimkan formulir (misalnya, untuk
+                    file upload).</li>
+                <section class="material-content">
+                    <div class="editor" data-content="form"></div>
+                    <iframe class="preview" data-content="form"></iframe>
+                </section><br>
+                <hr>
+                <h3>Input Types dan Atribut</h3>
+                <p>Tag &lt;input&gt; digunakan untuk membuat kolom isi dalam form. Tapi kamu tahu ga? Satu tag
+                    &lt;input&gt; bisa jadi macam-macam bentuk hanya dengan mengganti
+                    type-nya!
+                </p>
 
-            <p>Contoh penggunaan tag &lt;form&gt;:</p>
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Tipe Input</th>
+                            <th>Fungsinya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>text</code></td>
+                            <td>Input teks biasa(nama, alamat, dll).</td>
+                        </tr>
+                        <tr>
+                            <td><code>email</code></td>
+                            <td>Input untuk alamat email, ada validasi otomatis (harus pakai @).</td>
+                        </tr>
+                        <tr>
+                            <td><code>password</code></td>
+                            <td>Input untuk sandi (karakter disembunyikan pakai bintang).</td>
+                        </tr>
+                        <tr>
+                            <td><code>number</code></td>
+                            <td>Input untuk angka, bisa diatur batasnya (min, max).</td>
+                        </tr>
+                        <tr>
+                            <td><code>date, time</code></td>
+                            <td>Input untuk memilih tanggal (ada kalender). Dan jam.</td>
+                        <tr>
 
-            <section class="material-content">
-                <div class="editor" data-content="form"></div>
-                <iframe class="preview" data-content="form"></iframe>
-            </section><br>
-
-            <p>Tag &lt;a&gt; menggunakan atribut <code>href</code> (hypertext reference) untuk menentukan alamat atau
-                link tujuan yang ingin diarahkan saat tautan diklik</p>
-            <hr>
-
-            <h3>Input Types dan Atributnya</h3>
-            <p>Tag &lt;input&gt; digunakan untuk menerima data dari pengguna. Tipe input menentukan jenis data yang
-                dimasukkan.</p>
-
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Tipe Input</th>
-                        <th>Fungsi / Kegunaan</th>
-                        <th>Contoh Tampilan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>text</code></td>
-                        <td>Input teks biasa</td>
-                        <td><input type="text" placeholder="Teks biasa"></td>
-                    </tr>
-                    <tr>
-                        <td><code>email</code></td>
-                        <td>Input untuk alamat email</td>
-                        <td><input type="email" placeholder="nama@email.com"></td>
-                    </tr>
-                    <tr>
-                        <td><code>password</code></td>
-                        <td>Input untuk sandi (disembunyikan)</td>
-                        <td><input type="password"></td>
-                    </tr>
-                    <tr>
-                        <td><code>radio</code></td>
-                        <td>Pilihan tunggal dari beberapa opsi</td>
-                        <td><input type="radio" name="gender"> Pria</td>
-                    </tr>
-                    <tr>
-                        <td><code>checkbox</code></td>
-                        <td>Pilihan ganda</td>
-                        <td><input type="checkbox"> Saya setuju</td>
-                    </tr>
-                    <tr>
-                        <td><code>submit</code></td>
-                        <td>Tombol kirim formulir</td>
-                        <td><input type="submit" value="Kirim"></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Label, Button, dan Select</h3>
-
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Tag HTML</th>
-                        <th>Fungsi / Kegunaan</th>
-                        <th>Contoh Tampilan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>&lt;label&gt;</code></td>
-                        <td>Memberi keterangan pada input. Gunakan atribut <code>for</code> untuk mengaitkan dengan
-                            <code>id</code> input.
-                        </td>
-                        <td><label for="nama">Nama:</label></td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;button&gt;</code></td>
-                        <td>Membuat tombol untuk kirim data atau aksi lainnya.</td>
-                        <td><button type="submit">Kirim</button></td>
-                    </tr>
-                    <tr>
-                        <td><code>&lt;select&gt;</code></td>
-                        <td>Membuat menu dropdown. Pilihannya dibuat dengan tag <code>&lt;option&gt;</code>.</td>
-                        <td>
-                            <select>
-                                <option>HTML</option>
-                                <option>CSS</option>
-                            </select>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            <td><code>radio</code></td>
+                            <td>Pilihan tunggal (hanya satu yang bisa dipilih)</td>
+                        </tr>
+                        <tr>
+                            <td><code>checkbox</code></td>
+                            <td>Pilihan ganda (boleh lebih dari satu)</td>
+                        </tr>
+                        <tr>
+                            <td><code>submit</code></td>
+                            <td>Tombol untuk mengirim formulir</td>
+                        </tr>
+                        <tr>
+                            <td><code>reset</code></td>
+                            <td>Tombol untuk mengatur ulang semua input ke nilai awal.</td>
+                        </tr>
+                        <tr>
+                            <td><code>file</code></td>
+                            <td>Input untuk mengunggah file (gambar, dokumen, dll).</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <p>Selain tipe input, ada juga atribut penting yang bisa kamu tambahkan ke tag &lt;input&gt; untuk
+                    mengatur perilakunya:</p>
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Atribut</th>
+                            <th>Fungsinya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;label&gt;</code></td>
+                            <td>Teks contoh di dalam kotak isian (seperti "Masukkan nama lengkap").</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;required&gt;</code></td>
+                            <td>Wajib diisi. Kalau kosong, form tidak bisa dikirim.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;value&gt;</code></td>
+                            <td>Nilai awal (bisa untuk input tersembunyi atau pilihan default).</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;checked&gt;</code></td>
+                            <td>Menandai <code>checkbox</code> atau <code>radio</code> sudah diisi.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;min / max&gt;</code></td>
+                            <td>Batas angka atau tanggal (misal umur antara 1-80)</code> sudah diisi.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;name&gt;</code></td>
+                            <td>Nama variabel input yang akan dikirim ke server (penting!).</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <section class="material-content">
+                    <div class="editor" data-content="inputtypes"></div>
+                    <iframe class="preview" data-content="inputtypes"></iframe>
+                </section><br>
+                <hr>
+                <h3>Label, Button, dan Select</h3>
+                <p><b>Label</b> adalah teks yang memberi tahu pengguna apa yang harus diisi. Tapi lebih dari itu,
+                    kalau di klik, label bisa langsung mengaktifkan input-nya.</p>
+                <p><b>Button</b> Tombol yang memberi "aksi" pada formulir, untuk mengirim, menghapus atau sekadar
+                    menampilkan pesan.</p>
+                <p><b>Select</b> adalah menu dropdown untuk memilih satu dari beberapa pilihan. Pilihan dibuat dengan
+                    tag
+                    &lt;option&gt;.</p>
+                <section class="material-content">
+                    <div class="editor" data-content="lbs"></div>
+                    <iframe class="preview" data-content="lbs"></iframe>
+                </section>
         </div>
-            <div class="btn-materi">
-                <a class="btn-purple" href="">Materi selanjutnya</a>
-            </div>
+    </div>
 
-            <!-- Footer -->
-            <footer class="py-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <h4 class="fw-bold">PIAN</h4>
-                            <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan
-                                web
-                                frontend.</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <h4 class="fw-bold">MATERI</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none">HTML</a></li>
-                                <li><a href="#" class="text-decoration-none">CSS</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <h4 class="fw-bold">TENTANG</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none">TIM</a></li>
-                                <li><a href="#" class="text-decoration-none">CONTACT</a></li>
-                                <li><a href="/kebijakan.html" class="text-decoration-none">KEBIJAKAN</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr class="border-light">
-                    <p class="text-center mb-0">
-                        © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
-                    </p>
+    <div class="btn-materi btn-materi d-flex justify-content-between px-4">
+        <a class="btn-purple" href="/materi/html/list-dan-tabel.html">Materi sebelumnya</a>
+        <a class="btn-purple" href="/materi/css/warna-dan-background.html">Materi selanjutnya</a>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">PIAN</h4>
+                    <p>Platform pembelajaran coding gratis untuk semua. Fokus pada HTML, CSS, dan pengembangan web
+                        frontend.</p>
                 </div>
-            </footer>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">MATERI</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">HTML</a></li>
+                        <li><a href="/materi/css" class="text-decoration-none">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">TENTANG</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">TIM</a></li>
+                        <li><a href="#" class="text-decoration-none">CONTACT</a></li>
+                        <li><a href="kebijakan.html" class="text-decoration-none">KEBIJAKAN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">
+                © 2025 PIAN - Platform Interaktif Anak Ngoding. All rights reserved.
+            </p>
+        </div>
 
-            <!-- bagian js -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-                crossorigin="anonymous"></script>
+    </footer>
 
-            <script>
-                const examples = {
-                    form: `<!DOCTYPE html>
+    <!-- bagian js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const examples = {
+            form: `<!DOCTYPE html>
 <html>
-  <head><title>Contoh Form</title></head>
-  <body>
-    <form action="/submit" method="POST">
-      <input type="text" name="nama" placeholder="Masukkan nama">
-      <input type="submit" value="Kirim">
+<head>
+    <title>Contoh Formulir HTML</title>
+</head>
+<body>
+    <form action="/proses.html" method="post">
+        <!-- isian form seperti input, select, button -->
     </form>
-  </body>
+</body>
 </html>`,
-                    input: `<!DOCTYPE html>
+            inputtypes: `<!DOCTYPE html>
 <html>
   <head><title>Contoh Input</title></head>
   <body>
     <form>
+        
       <input type="text" placeholder="Nama"><br>
       <input type="email" placeholder="Email"><br>
       <input type="password" placeholder="Password"><br>
-      <input type="checkbox"> Saya setuju<br>
+      <input type ="number" placeholder="Usia" min="1" max="100"><br>
+      <input type="date"><br>
+      <input type="time"><br>
       <input type="radio" name="gender"> Laki-laki
       <input type="radio" name="gender"> Perempuan<br>
+      <input type="checkbox"> Saya setuju<br>
       <input type="submit" value="Kirim">
+      <input type="reset" value="Atur Ulang"><br>
+      <input type="file"><br>      
     </form>
   </body>
 </html>`,
 
-                    select: `<!DOCTYPE html>
+            lbs: `<!DOCTYPE html>
 <html>
   <head><title>Contoh Form Lengkap</title></head>
   <body>
     <form>
-      <label for="nama">Nama:</label>
+      <label for="nama">Nama Lengkap:</label>
       <input type="text" id="nama" name="nama"><br><br>
 
-      <label for="kelas">Pilih Kelas:</label>
-      <select id="kelas" name="kelas">
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="js">JavaScript</option>
-      </select><br><br>
-
-      <button type="submit">Daftar</button>
+      <button type="submit">Kirim</button>
+      <button type="reset">Reset</button><br><br>
+      
+      <label for="kota">Kota Asal:</label>
+      <select id="kota" name="kota">
+        <option value="jakarta">Banjarmasin</option>
+        <option value="bandung">Palamgkaraya</option>
+    </select>
+        <br><br>
     </form>
   </body>
-</html>`
-                };
+</html>`,
+        };
 
-                document.querySelectorAll('.editor').forEach((el, index) => {
-                    const key = el.dataset.content;
-                    const editor = ace.edit(el, {
-                        theme: "ace/theme/twilight",
-                        mode: "ace/mode/html",
-                        fontSize: 14,
-                    });
+        document.querySelectorAll('.editor').forEach((el, index) => {
+            const key = el.dataset.content;
+            const editor = ace.edit(el, {
+                theme: "ace/theme/twilight",
+                mode: "ace/mode/html",
+                fontSize: 14,
+            });
 
-                    editor.setValue(examples[key], -1);
-                    const preview = document.querySelector(`.preview[data-content="${key}"]`);
-                    const updatePreview = () => {
-                        const code = editor.getValue();
-                        const doc = preview.contentDocument || preview.contentWindow.document;
-                        doc.open();
-                        doc.write(code);
-                        doc.close();
-                    };
+            editor.setValue(examples[key], -1);
+            const preview = document.querySelector(`.preview[data-content="${key}"]`);
+            const updatePreview = () => {
+                const code = editor.getValue();
+                const doc = preview.contentDocument || preview.contentWindow.document;
+                doc.open();
+                doc.write(code);
+                doc.close();
+            };
 
-                    editor.session.on('change', updatePreview);
-                    updatePreview();
-                });
-            </script>
+            editor.session.on('change', updatePreview);
+            updatePreview();
+        });
+    </script>
 
 </body>
 

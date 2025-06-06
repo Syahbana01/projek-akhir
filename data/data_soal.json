@@ -43,9 +43,9 @@
         "jawaban": "1991"
       },
       {
-        "pertanyaan": " Fitur baru yang diperkenalkan dalam HTML5 adalah",
+        "pertanyaan": "Fitur baru yang diperkenalkan dalam HTML5 adalah",
         "pilihan": [
-          "Penghapusan elemen &lt;div&gt;",
+          "Penghapusan elemen <div>",
           "Perkenalan bahasa pemrograman baru",
           "Pemisahan antara HTML dan XML",
           "Dukungan grafis, audio, dan video "
@@ -58,7 +58,7 @@
     "judul": "Struktur Dasar HTML",
     "soal": [
       {
-        "pertanyaan": "Apa fungsi &lt;!DOCTYPE html&gt; dalam dokumen HTML?",
+        "pertanyaan": "Apa fungsi <!DOCTYPE html> dalam dokumen HTML?",
         "pilihan": [
           "Menentukan bahasa dokumen",
           "Mendefinisikan tag utama",
@@ -70,25 +70,25 @@
       {
         "pertanyaan": "Tag utama yang membungkus seluruh elemen HTML adalah?",
         "pilihan": [
-          "&lt;body&gt;",
-          "&lt;head&gt;",
-          "&lt;html&gt;",
-          "&lt;main&gt;"
+          "<body>",
+          "<head>",
+          "<html>",
+          "<main>"
         ],
-        "jawaban": "&lt;html&gt;"
+        "jawaban": "<html>"
       },
       {
         "pertanyaan": "Semua elemen metadata ditulis di dalam tag?",
         "pilihan": [
-          "&lt;body&gt;",
-          "&lt;footer&gt;",
-          "&lt;head&gt;",
-          "&lt;section&gt;"
+          "<body>",
+          "<footer>",
+          "<head>",
+          "<section>"
         ],
-        "jawaban": "&lt;head&gt;"
+        "jawaban": "<head>"
       },
       {
-        "pertanyaan": "Elemen &lt;body&gt; berfungsi untuk?",
+        "pertanyaan": "Elemen <body> berfungsi untuk?",
         "pilihan": [
           "Menampilkan data pengguna",
           "Menyimpan metadata",
@@ -98,7 +98,7 @@
         "jawaban": "Menampilkan isi utama halaman"
       },
       {
-        "pertanyaan": "Tag &lt;title&gt; digunakan untuk?",
+        "pertanyaan": "Tag <title> digunakan untuk?",
         "pilihan": [
           "Menampilkan isi utama",
           "Menentukan judul halaman di tab browser",
@@ -106,6 +106,61 @@
           "Menambahkan gambar"
         ],
         "jawaban": "Menentukan judul halaman di tab browser"
+      }
+    ]
+  },
+  "link-dan-gambar-html": {
+    "judul": "Link dan Gambar",
+    "soal": [
+      {
+        "pertanyaan": "Tag HTML untuk membuat link adalah?",
+        "pilihan": [
+          "&lt;a&gt;",
+          "&lt;img&gt;",
+          "&lt;link&gt;",
+          "&lt;href&gt;"
+        ],
+        "jawaban": "&lt;a&gt;"
+      },
+      {
+        "pertanyaan": "Atribut yang digunakan untuk menentukan URL tujuan link adalah?",
+        "pilihan": [
+          "src",
+          "href",
+          "link",
+          "url"
+        ],
+        "jawaban": "href"
+      },
+      {
+        "pertanyaan": "Tag HTML untuk menampilkan gambar adalah?",
+        "pilihan": [
+          "&lt;image&gt;",
+          "&lt;img&gt;",
+          "&lt;picture&gt;",
+          "&lt;photo&gt;"
+        ],
+        "jawaban": "&lt;img&gt;"
+      },
+      {
+        "pertanyaan": "Atribut yang digunakan untuk menentukan sumber gambar adalah?",
+        "pilihan": [
+          "source",
+          "src",
+          "image",
+          "file"
+        ],
+        "jawaban": "src"
+      },
+      {
+        "pertanyaan": "Atribut yang digunakan untuk memberikan teks alternatif pada gambar adalah?",
+        "pilihan": [
+          "alt",
+          "title",
+          "text",
+          "caption"
+        ],
+        "jawaban": "alt"
       }
     ]
   }

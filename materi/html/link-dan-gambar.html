@@ -27,8 +27,8 @@
                     <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
                         Beranda</a>
                     <a class="nav-link" href="/materi.html"><i class="fa-solid fa-book"></i> Materi</a>
-
-                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="/tentang-kami.html"><i class="fa-solid fa-users"></i> Tentang Kami</a>
                 </div>
             </div>
         </div>
@@ -37,19 +37,29 @@
     <!-- Container -->
     <div class="jumbotron-judul text-center">
         <h1>Link & Gambar</h1>
-        <p>Memahami dasar-dasar HTML dan perannya dalam pembuatan Website.</p>
+        <p>Mempelajari cara menambahkan link dan gambar ke dalam halaman web.</p>
         <div class=" py-4">
-            <a class="btn-border-purple" href="#materi">Latihan soal</a>
+            <a class="btn-border-purple" href="/soal/soal.html?key=link-dan-gambar-html">Latihan soal</a>
         </div>
     </div>
 
     <!-- Content -->
     <div class=" box-materi">
         <div class="teks justify-text">
-            <h3>Tag anchor &lt;a&gt; </h3>
-            <p>Tag &lt;a&gt; (anchor) digunakan untuk membuat tautan atau link ke halaman lain, bagian tertentu dalam
-                halaman, atau dokumen. Tautan ini bisa berupa teks atau elemen
-                seperti gambar</p>
+            <h3>Tag anchor &lt;a&gt;</h3>
+            <p>Dalam dunia nyata, kita bisa melihat papan petunjuk arah atau tombol "klik disini" yang membawa kita ke
+                tempat baru.
+                Nah, dalam HTML, elemen yang berperan sebagai "pengarah jalan" ini adalah &lt;a&gt; yang disebut juga
+                (anchor tag).</p>
+            <ul>
+                <p>Tag &lt;a&gt; digunakan untun membuat <b>hyperlink</b>, yaitu tautan yang bisaa mengarahkan pengguna
+                    ke:</p>
+                <li>Halaman lain di website yang sama</li>
+                <li>Website lain (eksternal)</li>
+                <li>File seperti PDF, gambar, atau dokumen.</li>
+                <li>Bagian tertentu di dalam halaman yang sama.</li>
+                <li>Email atau nomor telepon.</li>
+            </ul>
             <p>Berikut contoh penggunaan tag anchor:</p>
 
             <!--Code editor heading-->
@@ -58,41 +68,54 @@
                 <iframe class="preview" data-content="anchor"></iframe>
             </section><br>
 
-            <p>Tag &lt;a&gt; menggunakan atribut <code>href</code> (hypertext reference) untuk menentukan alamat atau
-                link tujuan yang ingin diarahkan saat tautan diklik</p>
+            <p>Tag &lt;a&gt; itu seperti pintu masuk ke dunia lain. Tanpa tag ini, pengguna hanya akan "teperangkap"
+                di satu halaman web tanpa bisa menjelajah lebih jauh.
+                Dengan tag &lt;a&gt;, kita bisa membuat tautan yang menghubungkan berbagai halaman web, sehingga
+                pengguna dapat dengan mudah berpindah dari satu web ke web lain.</p>
             <hr>
 
             <h3>Tag Gambar &lt;img&gt;</h3>
-            <p>Tag &lt;img&gt; digunakan untuk menampilkan gambar pada halaman web. Berbeda dengan tag &lt;a&gt; yang
+            <p>Manusia adalah makhluk visual. Gambar bisa menjelaskan banyak hal lebih cepat dari teks.Di HTML,
+                elemen yang digunakan untuk menampilkan gambar adalah tag &lt;img&gt; fungsinya untuk menampilkan gambar
+                pada halaman web. Berbeda dengan tag &lt;a&gt; yang
                 memiliki tag pembuka dan penutup (&lt;&gt;),
                 tag &lt;img&gt; adalah tag kosong (self-closing). </p>
-            <p>Berikut contoh penggunaan tag &lt;img&gt;:/p>
+            <p> Berikut contoh penggunaan tag &lt;img&gt; :</p>
 
-                <!--Code editor paragraf-->
+            <!--Code editor paragraf-->
             <section class="material-content">
                 <div class="editor" data-content="img"></div>
                 <iframe class="preview" data-content="img"></iframe>
             </section>
 
-            <p>Tag &lt;img&gt; membutuhkan atribut <code>src</code> untuk menentukan sumber gambar,
-                dan atribut <code>alt</code> sebagai teks alternatif jika gambar tidak dapat ditampilkan.</p>
+            <p>Tag &lt;img&gt; membutuhkan atribut <code>src</code> untuk menentukan sumber gambar, berfungsi untuk
+                memnentukan sumber gambar, yaitu
+                lokasi file gambar yang ingin ditampilkan. Lokasi ini bisa berupa file lokal dari folder dalam proyek
+                atau juga bisa berupa URL dari gambar yang berada di internet
+                dan atribut <code>alt</code> sebagai teks alternatif jika gambar tidak dapat ditampilkan. Atribut ini
+                berfungsi sebagai pengganti gambar jika gambar gagal dimuat
+                karena alasan tertentu seperti kesalahan penulisan path atau koneksi yang lambat.</p>
             <hr>
 
             <h3>Atribut href, src, dan alt</h3>
             <p>
             <ul>
-                <li><strong>href</strong>: digunakan di tag &lt;a&gt; untuk menentukan alamat tujuan dari link.</li>
-                <li><strong>src</strong>: digunakan di tag &lt;img&gt; untuk menentukan lokasi atau sumber file gambar.
-                </li>
-                <li><strong>alt</strong>: digunakan di tag &lt;img&gt; untuk memberikan teks alternatif yang akan
-                    ditampilkan jika gambar gagal dimuat.</li>
+                <li><strong>href</strong>: digunakan di tag &lt;a&gt; untuk menentukan alamat tujuan dari link. Dengan <code>href</code>, kita bisa mengarahkan pengguna
+                ke halaman lain, situs eksternal, atau bagian tertentu dalam halaman yang sama. Tanpa <code>href</code>, link tidak bisa berfungsi.
+            Ini membuat <code>href</code> menjadi kunci penting dalam navigasi web.</li>
+                <li><strong>src</strong>: digunakan di tag &lt;img&gt; untuk memnentukan sumber gambar yang ingin ditampilkan. Bisa berupa file lokal dalam proyek atau URL gambar dari internet.
+                Jika <code>src</code> salah atau tidak ada, gambar tidak akan muncul di halaman.</li>
+                <li><strong>alt</strong>: digunakan di tag &lt;img&gt; untuk memberikan teks alternatif, teks ini muncul saat gambar gagal dimuat dan sangat membantu pengguna yang menggunakan pembaca layar,
+                sekaligus membantu mesin pencari memamahami isi gambar. Dengan <code>alt</code>, website jadi lebih ramah dan inklusif.</li>
             </ul>
             </p>
         </div>
     </div>
 
-    <div class="btn-materi">
-        <a class="btn-purple" href="">Materi selanjutnya</a>
+
+    <div class="btn-materi btn-materi d-flex justify-content-between px-4">
+        <a class="btn-purple" href="/materi/html/heading-dan-paragraf.html">Materi sebelumnya</a>
+        <a class="btn-purple" href="/materi/html/list-dan-tabel.html">Materi selanjutnya</a>
     </div>
 
     <!-- Footer -->

@@ -26,8 +26,8 @@
                     <a class="nav-link" aria-current="page" href="/index.html"><i class="fa-solid fa-house"></i>
                         Beranda</a>
                     <a class="nav-link" href="/materi.html"><i class="fa-solid fa-book"></i> Materi</a>
-
-                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Tentang Kami</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-trophy"></i> Tantangan</a>
+                    <a class="nav-link" href="/tentang-kami.html"><i class="fa-solid fa-users"></i> Tentang Kami</a>
                 </div>
             </div>
         </div>
@@ -45,57 +45,79 @@
     <!-- Content -->
     <div class=" box-materi">
         <div class="teks justify-text">
-            <p><strong>Layout dan Positioning</strong> dalam CSS digunakan untuk mengatur tata letak elemen dalam halaman web.
-            Layout mengatur struktur umum seperti header, konten, dan footer. Sementara itu, positioning menentuka posisi elemen,
-        baik relatif terhadap elemen lain atau jendela browser. Properti penting yang digunakan (disply, position, float, dan clear).</p>
-            <hr>
             <h3>Display Property</h3>
-            <p>Properti <code>display</code>mengatur elemen ditampilan. Contoh property <code>block</code> <code>inline</code></p>
+            <p>Properti <code>disply</code> dalam CSS gunanya untuk mengontrol bagaimana elemen ditampilkan di halaman
+                web entah sebagai blok,
+                inline, fleksibel atau bahkan disembunyikan.</p>
+            <li><code>block</code> → Elemen ditampilkan sebagai blok penuh. Biasanya membuat elemen tampil di baris
+                baru. Contoh: &lt;div&gt;, &lt;p&gt;</li>
+            <li><code>inline</code> → Elemen tidak memulai baris baru, hanya selebar isi kontennya. Contoh:
+                &lt;span&gt;, &lt;a&gt;</li>
+            <li><code>inline-block</code> → Gabungan antara <code>inline</code> dan <code>block</code>. Bisa diberi
+                ukuran, tapi tetap sebaris.</li>
+            <li><code>none</code> → Elemen tidak akan ditampilkan sama sekali.</li>
+            </ul><br>
+            <section class="material-content">
+                <div class="editor" data-content="displyProperty"></div>
+                <iframe class="preview" data-content="displyProperty"></iframe>
+            </section>
+            <p>Bayangkan saja ketika kamu punya mainan blok dan sticker. Elemen <code>block</code> itu seperti balok
+                besar yang butuh satu garis penuh.
+                Sedangkan <code>inline</code> seperti sticker kecil yang menempel di baris yang sama dengan lainnya.</p>
+            <hr>
+            <h3>Position (relative, absolute, fixed)</h3>
+            <p><strong>Apa itu position? </strong>
+                Properti <code>position</code> di CSS untuk menentukan cara suatu elemen ditempatkan dalam halaman web.
+                Apakah elemen itu mengikuti alur normal halaman? Atau harus menempel dipojok? Atau bahkan tetap di
+                tempat saat kamu scroll?
             </p>
+            <p>
+                <stong>Berikut jenis-jenis position:</stong>
+            </p>
+            <ul>
+                <li><code>relative</code> → Elemen tetap di tempatnya, tapi bisa digeser sedikit.</li>
+                <li><code>absolute</code> → Elemen "menempel" pada posisi tertentu dalam container terdekat.</li>
+                <li><code>fixed</code> → Elemen tetap di tempatnya, bahkan saat halaman di-scroll.</li><br>
+                <section class="material-content">
+                    <div class="editor" data-content="position"></div>
+                    <iframe class="preview" data-content="position"></iframe>
+                </section><br>
+                <p><strong>Tips Praktis:</strong>
+                <ul>
+                    <li>Gunakan <code>relative</code> saat kamu ingin sedikit menggeser elemen tanpa mempengaruhi posisi
+                        elemen lain.</li>
+                    <li>Gunakan <code>absolute</code> untuk membuat elemen "menempel" di pojok container (wadahnya).
+                    </li>
+                    <li>Gunakan <code>fixed</code> untuk elemen seperti tombol WhatsApp mengambang atau navbar yang
+                        selalu terlihat saat di scroll.</li>
+                </ul>
+                </p>
+                <hr>
+                <h3>Float dan Clear</h3>
+                <p><b>Apa itu Float?</b></p>
+                <p><code>float</code> digunakan untuk membuat elemen mengapung ke kanan atau ke kiri,
+                    sehingga teks atau elemen lain bisa mengalir di sekitarnya. Contohnya seperti saat gambar majalah
+                    dikelilingi oleh teks.
+                    Tapi hati-hati! kalau dipakai tanpa menggunakan <code>clear</code>, layout bisa berantakan.</p>
+                <li><code>left</code> Posisi kiri</li>
+                <li><code>right</code> Posisi kanan</li>
+                <li><code>none</code> Tidak di posisi atau tidak tergeser</li>
+            </ul>
+            <p><b>Apa itu Clear?</b></p>
+            <p><code>clear</code> adalah pasangan dari <code>float</code>. Properti ini untuk <b>menghindari efek
+                    melayang dari elemen sebelumnya</b>, dan memastikan elemen setelahnya tetap normal</p>
             <section class="material-content">
-                <div class="editor" data-content="elementSelector"></div>
-                <iframe class="preview" data-content="elementSelector"></iframe>
+                <div class="editor" data-content="floatandClear"></div>
+                <iframe class="preview" data-content="floatandClear"></iframe>
             </section><br>
-            <p>Kode diatas membuat contoh semua elemen &lt;p&gt; akan otomatis berwarna biru</p>
-            <hr>
-            <h3>Class dan ID selector</h3>
-            <p><strong>Class Selector</strong> digunakan untuk memilih <strong>satu atau beberapa elemen HTML</strong>
-                yang memiliki
-                atribut <i>class.</i> Dalam CSS, kita menuliskannya
-                dengan tanda titik (.) diikuti nama class. Class ini sangat fleksibel karena bisa digunakan lebih dari
-                satu dari berbagai elemen yang berbeda.
-                Ini cocok untuk membuat style yang dapat dugunakan berulang, seperti design layout kolom, tombol dan
-                kartu.</p>
-            <section class="material-content">
-                <div class="editor" data-content="classSelector"></div>
-                <iframe class="preview" data-content="classSelector"></iframe>
-            </section><br>
-            <p><strong>ID Selector</strong> digunakan untuk memilih elemen HTML yang memiliki atribut <i>id.</i> Dalam
-                CSS, kita menuliskannya dengan tanda pagar (#) diikuti nama ID.
-                ID ini unik, artinya hanya boleh <strong>digunakan pada satu elemen HTML</strong> dalam halaman web. ID
-                biasanya digunakan
-                untuk elemen yang spesifik, seperti header atau footer.</p>
-            <p>Berikut contoh penggunaan class dan ID selector:</p>
-
-            <section class="material-content">
-                <div class="editor" data-content="idSelector"></div>
-                <iframe class="preview" data-content="idSelector"></iframe>
-            </section><br>
-
-            <p>Dengan <strong>class selector,</strong> kita bisa membuat style yang bisa dipakai berulang.
-                Dengan <strong>ID selector,</strong> kita memberi gaya pada elemen unik.</p>
-            <hr>
-            <h3>Kombinasi Selector</h3>
-            <p><strong>Kombinasi Selector</strong> digunakan ketika kita ingin menargetkan elemen secara lebih spesifik
-                berdasarkan struktur HMTL-nya atau lebih dari satu kondisi./p>
-            <section class="material-content">
-                <div class="editor" data-content="kombinasiSelector"></div>
-                <iframe class="preview" data-content="kombinasiSelector"></iframe>
-            </section><br>
+            <p>Bayangkan kamu punya gambar yang mengapung di kiri, lalu teks di scroll di sampingnya. Tapi kalau ada
+                elemen lain yang ingin kamu letakkan di bawah gambar itu, kamu harus pakai <code>clear</code> supaya
+                elemen itu tidak melayang.</p>
         </div>
     </div>
 
-    <div class="btn-materi">
+    <div class="btn-materi btn-materi d-flex justify-content-between px-4">
+        <a class="btn-purple" href="/materi/css/box-model-css.html">Materi sebelumnya</a>
         <a class="btn-purple" href="">Materi selanjutnya</a>
     </div>
 
@@ -138,119 +160,109 @@
 
     <script>
         const examples = {
-            elementSelector:
+            displyProperty:
+                `<!DOCTYPE html>
+<html>
+<head>
+<title>Layout & Positioning</title>
+<style>
+  .block { display: block; background: lightblue; padding: 10px; }
+  .inline { display: inline; background: lightgreen; padding: 5px; }
+  .inline-block { display: inline-block; background: lightcoral; padding: 5px; width: 100px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<div class="block">Ini elemen block</div>
+<div class="block">BLOCK: mulai dari baris baru</div>
+<span class="inline">INLINE</span>
+<span class="inline">INLINE #2</span>
+<div class="inline-block">INLINE-BLOCK</div>
+<p class="hidden">Disembunyikan!</p>
+</body>
+</html>
+`,
+            position:
                 `<!DOCTYPE html>
 <html>
 <head>
     <style>
-        p {
-            color: red;
-        }
-    </style>
+  .box {
+    width: 120px;
+    height: 120px;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    margin: 10px;
+  }
+  .relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: steelblue;
+  }
+  .absolute-container {
+    position: relative;
+    height: 200px;
+    background: #ddd;
+  }
+  .absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: tomato;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+  }
+</style>
 </head>
 <body>
-    <p>Warna ini berubah jadi warna merah.</p>
+    <div class="box relative">Relative</div>
+    <div class="absolute-container">
+        <div class="box absolute">Absolute</div>
+    </div>
+    <div class="box fixed">Fixed</div>
 </body>
 </html>
 
 `,
-            classSelector:
+            floatandClear:
                 `<!DOCTYPE html>
 <html>
 <head>
   <style>
-    .kotak1 {
-      background-color: #e0f7fa; /* Warna biru muda */
-      padding: 15px;
-      border-radius: 8px;
-      color: #333;-
-    }
-    .kotak2 {
-      background-color: #f2f2f2; /* Warna abu-abu terang */
-      padding: 15px;
-      border-radius: 8px;
-      color: #333;
-    }
-  </style>
+  .float-left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin-right: 10px;
+  }
+
+  .text {
+    background: #f9f9a1;
+    padding: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+</style>
 </head>
 <body>
-  <div class="kotak1">Ini kotak pertama</div>
-  <div class="kotak2">Ini kotak kedua</div>
-</body>
-</html>
-`,
-            idSelector:
-                `<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    #judul-utama {
-      font-size: 28px;
-      color: #0066cc;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <h1 id="judul-utama">Selamat Datang di Websita Kami</h1>
-</body>
-</html>
-`,
-            kombinasiSelector:
-                `<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    /* Kombinasi selector1: semua <p> di dalam <div> */
-    div p {
-    color: green;
-    font-style: italic;
-    }
-
-    /* Kombinasi selector lainnya:
-       Gaya ini diterapkan ke <p> dan <li> sekaligus */
-    h3, li {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #ff6347; /* Warna merah */
-    }
-        /* Kombinasi selector 3: <div> dengan class "box" */
-    div.box {
-      background-color: #e0e0e0;
-      padding: 10px;
-      border-left: 5px solid steelblue;
-      margin-bottom: 15px;
-    }
-
-    /* Kombinasi selector 4: <section> dengan ID "info" yang berisi <h2> */
-    #info h2 {
-      color: darkblue;
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-    <div>
-    <p>Paragraf ini berada di dalam elemen &lt;div&gt;, jadi style hijau dan miring.</p>
-  </div>
-
-  <h3>Ini adalah paragraf yang mendapatkan style dari selector kombinasi h3, li.</h3>
-
-  <ul>
-    <li>Item pertama dalam list</li>
-    <li>Item kedua dalam list</li>
-  </ul>
-
-
-  <div class="box">
-    Ini adalah div dengan class "box" — styling khusus karena gabungan selector div.box
-  </div>
-
-  <section id="info">
-    <h2>Informasi Tambahan</h2>
-    <p>Hanya h2 dalam section ini yang terkena selector gabungan ID + elemen.</p>
-  </section>
-
+  <div class="clearfix">
+  <div class="float-left">Float</div>
+  <p class="text">
+    Teks ini akan sejajar di samping elemen yang ada di posisi kiri. Teknik ini sering digunakan dalam layout lama seperti majalah atau kolom berita.
+  </p>
+</div>
 </body>
 </html>
 `,
@@ -280,5 +292,4 @@
     </script>
 
 </body>
-
 </html>
