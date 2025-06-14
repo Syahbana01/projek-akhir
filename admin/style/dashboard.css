@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+    font-family: 'Lexend';
+}
+
+.box{
+    box-shadow: 0 2px 10px 1px #00000036;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 900px;
+    justify-content: center;
+    margin: 50px auto;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+label{
+    font-size: small;
+}
+
+.btn-purple {
+    text-decoration: none;
+    color: #6E2BF1;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px #020006ab;
+    transition: all 0.15s ease-in-out;
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    margin: 10px;
+    cursor:pointer;
+}
+
+.btn-purple:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    color: white;
+    background-color: #6E2BF1;
+}
+
+
+.soal-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.soal-box h3 {
+    margin: 0 0 10px 0;
+}
+
+input,textarea {
+    width: 500px;
+    padding: 10px;
+    margin-top: 2px;
+    border: 2px solid #6E2BF1;
+    box-shadow: 0 2px 10px 1px #00000036;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+select{
+    padding: 10px;
+    margin-top: 2px;
+    border: 2px solid #f12b2b;
+    box-shadow: 0 2px 10px 1px #00000036;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.btn-hapus {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px 1px #00000036;
+}
+
+.btn-edit {
+    background: #04b00f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px 1px #00000036;
+}

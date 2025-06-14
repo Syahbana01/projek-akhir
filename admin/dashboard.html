@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Admin | PIAN</title>
+  <script src="https://kit.fontawesome.com/cb4adfc2df.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/admin/style/dashboard.css">
+</head>
+<body>
+  <h1>Dashboard Admin</h1>
+  <div class="box">
+    <h3>Pilih Kategori Soal</h3>
+    <select id="selectKategori">
+      <option value="">-- Pilih kategori soal --</option>
+    </select>
+    <div id="formSoalContainer" style="display:none;">
+      <button id="btnEditJudulKategori" class="btn-purple">Edit Judul</button>
+
+      <h3><span id="judulKategori"></span></h3>
+
+      <div id="listSoal"></div>
+
+      <h3>Tambah Soal Baru</h3>
+      <label>Pertanyaan:</label><br>
+      <textarea id="inputPertanyaan" rows="2"></textarea><br>
+
+      <label>Pilihan (pisahkan dengan tanda koma):</label><br>
+      <input type="text" id="inputPilihan" placeholder="Contoh: pilihan1,pilihan2,pilihan3,pilihan4"><br>
+
+      <label>Jawaban Benar:</label><br>
+      <input type="text" id="inputJawaban" placeholder="Salah satu dari pilihan"><br>
+
+      <button id="btnTambahSoal" class="btn-purple">Tambah Soal</button>
+    </div>
+  </div>
+
+  <script src="/admin/js/dashboard.js" type="module"></script>
+</body>
+
+</html>
