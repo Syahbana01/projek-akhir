@@ -46,34 +46,32 @@ function tampilkanSoal(key) {
       const namaRadio = `soal-${index}`;
       jawabanBenar[namaRadio] = soal.jawaban;
 
+      // Gabungkan semua pilihan dalam satu string
+      let pilihanHTML = '';
+      soal.pilihan.forEach((opsi, i) => {
+        const id = `${namaRadio}-opsi-${i}`;
+        pilihanHTML += `
+          <label class="form-control mb-2" for="${id}">
+            <input type="radio" name="${namaRadio}" id="${id}" value="${escapeHTML(opsi)}" aria-label="Jawaban ${escapeHTML(opsi)}">
+            ${escapeHTML(opsi)}
+          </label>
+        `;
+      });
+
+      // Gabung ke dalam divSoal langsung
       const divSoal = document.createElement("div");
       divSoal.className = "question-box mb-4";
+      divSoal.innerHTML = `<h5 class="mb-3">${index + 1}. ${escapeHTML(soal.pertanyaan)}</h5>${pilihanHTML}`;
 
-      divSoal.innerHTML = `<h5 class="mb-3">${index + 1}. ${escapeHTML(soal.pertanyaan)}</h5>`;
-
-      soal.pilihan.forEach((opsi, i) => {
-      const id = `${namaRadio}-opsi-${i}`;
-
-      const label = document.createElement("label");
-      label.className = "form-control mb-2";
-      label.setAttribute("for", id);
-
-      label.innerHTML = `
-        <input type="radio" name="${namaRadio}" id="${id}" value="${escapeHTML(opsi)}" aria-label="Jawaban ${escapeHTML(opsi)}"> ${escapeHTML(opsi)}
-      `;
-
-      divSoal.appendChild(label);
+      kontainer.appendChild(divSoal);
     });
-
-
-  kontainer.appendChild(divSoal);
-})
-;
   }, {
     onlyOnce: true
   });
 }
+
 window.tampilkanSoal = tampilkanSoal;
+
 
 
 function cekJawaban() {
@@ -95,7 +93,7 @@ function cekJawaban() {
     const toastEl = document.getElementById('toastBelumDijawab');
     const toast = new bootstrap.Toast(toastEl);
     toast.show();
-    return; // Stop penilaian kalau belum dijawab semua
+    return; 
   }
 
   const nilai = (benar / total) * 100;
@@ -126,11 +124,9 @@ function cekJawaban() {
 
 
 function resetJawaban() {
-  Object.keys(jawabanBenar).forEach(nama => {
-    const radios = document.querySelectorAll(`input[name="${nama}"]`);
-    radios.forEach(radio => {
-      radio.checked = false;
-    });
+  const semuaRadio = document.querySelectorAll('input[type="radio"]');
+  semuaRadio.forEach(radio => {
+    radio.checked = false;
   });
 }
 
@@ -142,7 +138,7 @@ function tampilkanModalHasil(pesan, status) {
   modal.show();
 }
 
-// Event listener
+// Supaya bisa pakai <>
 document.getElementById("submitBtn").addEventListener("click", cekJawaban);
 
 function escapeHTML(text) {
