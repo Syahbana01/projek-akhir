@@ -45,8 +45,6 @@ function tampilkanSoal(key) {
     listSoal.forEach((soal, index) => {
       const namaRadio = `soal-${index}`;
       jawabanBenar[namaRadio] = soal.jawaban;
-
-      // Gabungkan semua pilihan dalam satu string
       let pilihanHTML = '';
       soal.pilihan.forEach((opsi, i) => {
         const id = `${namaRadio}-opsi-${i}`;
@@ -58,7 +56,6 @@ function tampilkanSoal(key) {
         `;
       });
 
-      // Gabung ke dalam divSoal langsung
       const divSoal = document.createElement("div");
       divSoal.className = "question-box mb-4";
       divSoal.innerHTML = `<h5 class="mb-3">${index + 1}. ${escapeHTML(soal.pertanyaan)}</h5>${pilihanHTML}`;
