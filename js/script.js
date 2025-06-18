@@ -1,4 +1,4 @@
-function revealCards() {
+function revealCards() { 
         const cards = document.querySelectorAll('.keunggulan-pop');
         const triggerBottom = window.innerHeight * 0.85;
         cards.forEach(card => {
